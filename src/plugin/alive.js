@@ -67,7 +67,7 @@ _________________________________________
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363249960769123@newsletter',
+                  newsletterJid: '120363249969123@newsletter',
                   newsletterName: "BILAL-MD",
                   serverMessageId: 143
                 }
