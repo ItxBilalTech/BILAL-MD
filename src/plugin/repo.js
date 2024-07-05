@@ -3,7 +3,7 @@ const { generateWAMessageFromContent, proto } = pkg;
 import axios from 'axios'; // Import axios for HTTP requests
 
 const handleRepoCommand = async (m, Matrix) => {
-  const repoUrl = 'https://api.github.com/repos/Ethix-Xsid/Ethix-MD';
+  const repoUrl = 'https://api.github.com/repos/Bilalking001/KING-BILAL-MD';
   try {
     const response = await axios.get(repoUrl);
     const repoData = response.data;
@@ -33,7 +33,7 @@ const handleRepoCommand = async (m, Matrix) => {
               text: "© Powered By Ethix-MD"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
-             ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/fbbe1744668b44637c21a.jpg` } }, { upload: Matrix.waUploadToServer })),
+             ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/0ce918f5e476ddf99cfdc.png` } }, { upload: Matrix.waUploadToServer })),
               title: "",
               gifPlayback: true,
               subtitle: "",
