@@ -27,7 +27,7 @@ const facebookCommand = async (m, Matrix) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
   const text = m.body.slice(prefix.length + cmd.length).trim();
 
-  const validCommands = ['facebook', 'fb', 'fbdl'];
+  const validCommands = ['facebook', 'fb', 'fbdl','fc'];
 
   if (validCommands.includes(cmd)) {
     if (!text) {
