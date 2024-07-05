@@ -79,10 +79,10 @@ const song = async (m, Matrix) => {
                 text: `𝞢𝙏𝞖𝞘𝞦-𝞛𝘿 Video Downloader\n\n`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "© Powered By Ethix-MD"
+                text: "© Powered By KING-BILAL-MD"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/fbbe1744668b44637c21a.jpg` } }, { upload: Matrix.waUploadToServer })),
+                ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/05e1fde9eea24516fd6e0.jpg` } }, { upload: Matrix.waUploadToServer })),
                 title: ``,
                 gifPlayback: true,
                 subtitle: "",
@@ -169,7 +169,7 @@ const song = async (m, Matrix) => {
           const videoStream = ytdl(videoUrl, { filter: 'audioandvideo', quality: 'highest' });
           const finalVideoBuffer = await streamToBuffer(videoStream);
 
-          await Matrix.sendMessage(m.from, { video: finalVideoBuffer, mimetype: 'video/mp4', caption: `Title: ${title}\nAuther: ${author}\nDuration: ${duration}\n\n> Powered by Ethix-MD` }, { quoted: m });
+          await Matrix.sendMessage(m.from, { video: finalVideoBuffer, mimetype: 'video/mp4', caption: `Title: ${title}\nAuther: ${author}\nDuration: ${duration}\n\n> Powered by KING-BILAL-MD` }, { quoted: m });
         }
       } catch (error) {
         console.error("Error fetching video details:", error);
