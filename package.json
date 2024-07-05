@@ -1,14 +1,14 @@
 {
-  "name": "Ethix-MD",
+  "name": "BILAL-MD",
   "version": "10.8.1",
   "description": "Ethix-MD latest multi device whatsapp bot",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "pm2 start src/index.js --deep-monitoring --attach --name Ethix-MD"
+    "start": "pm2 start src/index.js --deep-monitoring --attach --name BILAL"
   },
   "keywords": ["ethix-md", "whatsapp-bot", "whatsapp md bot"],
-  "author": "Ethix-Xsid",
+  "author": "BILAL",
   "license": "ISC",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
