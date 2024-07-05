@@ -75,13 +75,13 @@ const song = async (m, Matrix) => {
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `𝞢𝙏𝞖𝞘𝞦-𝞛𝘿 Video Downloader\n*🔍Title:* ${videoDetails.title}\n*✍️ Author:* ${videoDetails.author}\n*🥸Views:* ${videoDetails.views}\n*👍 Likes:* ${videoDetails.likes}\n*📆 Upload Date:* ${videoDetails.uploadDate}\n*🏮 Duration:* ${videoDetails.duration}\n`
+                text: `KING-BILAL-MD� Video Downloader\n*🔍Title:* ${videoDetails.title}\n*✍️ Author:* ${videoDetails.author}\n*🥸Views:* ${videoDetails.views}\n*👍 Likes:* ${videoDetails.likes}\n*📆 Upload Date:* ${videoDetails.uploadDate}\n*🏮 Duration:* ${videoDetails.duration}\n`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "© Powered By 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿"
+                text: "© Powered By KING-BILAL-MD�"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/fbbe1744668b44637c21a.jpg` } }, { upload: Matrix.waUploadToServer })),
+                ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/05e1fde9eea24516fd6e0.jpg` } }, { upload: Matrix.waUploadToServer })),
                 title: "",
                 gifPlayback: true,
                 subtitle: "",
@@ -141,7 +141,7 @@ const song = async (m, Matrix) => {
         await Matrix.sendMessage(m.from, {
           document: finalVideoBuffer,
           mimetype: 'video/mp4',
-          caption: `Title: ${selectedFormat.title}\nAuthor: ${selectedFormat.author}\nViews: ${selectedFormat.views}\nLikes: ${selectedFormat.likes}\nUpload Date: ${selectedFormat.uploadDate}\nDuration: ${duration}\nSize: ${size}\n\n> Powered by 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿`
+          caption: `Title: ${selectedFormat.title}\nAuthor: ${selectedFormat.author}\nViews: ${selectedFormat.views}\nLikes: ${selectedFormat.likes}\nUpload Date: ${selectedFormat.uploadDate}\nDuration: ${duration}\nSize: ${size}\n\n> Powered by KING-BILAL-MD�`
         }, { quoted: m });
       } catch (error) {
         console.error("Error fetching video details:", error);
