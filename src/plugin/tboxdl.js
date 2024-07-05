@@ -23,7 +23,7 @@ const teraboxDownload = async (m, Matrix) => {
       if (result.response && result.response.length > 0) {
         const mediaInfo = result.response[0];
         const mediaUrl = mediaInfo.resolutions["Fast Download"];
-        const caption = "> © Powered By 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿";
+        const caption = "> © Powered By Itxxwasi�";
         
         if (mediaUrl) {
           const sendVideo = {
