@@ -104,7 +104,7 @@ let mode = bilal.public ? 'public' : 'private';
               text: "© Powered By bilal-MD"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./src/bilal.jpg')}, { upload: Matrix.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./src/bilal.png')}, { upload: Matrix.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: "",
@@ -334,7 +334,7 @@ let mode = bilal.public ? 'public' : 'private';
             }
         };
        let { key } = await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/bilal.jpg'), 
+  image: fs.readFileSync('./src/bilal.png'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -373,7 +373,7 @@ let mode = bilal.public ? 'public' : 'private';
 ┃✰ ${prefix}𝚃𝚒𝚔𝚝𝚘𝚔
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/bilal.jpg'), 
+  image: fs.readFileSync('./src/bilal.png'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -414,7 +414,7 @@ await Matrix.sendMessage(m.from, {
 ╰━━━━━━━━━━━━━━━⪼
      `
      await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/bilal.jpg'), 
+  image: fs.readFileSync('./src/bilal.png'), 
   caption: str, 
   contextInfo: {
     mentionedJid: [m.sender], 
@@ -439,7 +439,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙸𝚗𝚏𝚘𝚋𝚘𝚝
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/bilal.jpg'), 
+  image: fs.readFileSync('./src/bilal.png'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -478,7 +478,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝚊𝚞𝚝𝚘𝚜𝚟𝚒𝚎𝚠
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/bilal.jpg'), 
+  image: fs.readFileSync('./src/bilal.png'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -514,7 +514,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙻𝚢𝚛𝚒𝚌𝚜
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/bilal.jpg'), 
+  image: fs.readFileSync('./src/bilal.png'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -542,7 +542,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙶𝚒𝚝𝚑𝚞𝚋𝚂𝚝𝚊𝚕𝚔
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/bilal.jpg'), 
+  image: fs.readFileSync('./src/bilal.png'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -573,7 +573,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝚃𝚝𝚜
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/bilal.jpg'), 
+  image: fs.readFileSync('./src/bilal.png'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -605,7 +605,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙶𝚎𝚖𝚒𝚗𝚒
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/bilal.jpg'), 
+  image: fs.readFileSync('./src/bilal.png'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -638,7 +638,7 @@ await Matrix.sendMessage(m.from, {
 ╰━━━━━━━━━━━━━━━⪼
      `
      await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/bilal.jpg'), 
+  image: fs.readFileSync('./src/bilal.png'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
