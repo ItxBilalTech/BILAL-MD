@@ -37,10 +37,10 @@
    
  <a><img src='https://i.imgur.com/LyHic3i.gif'/></a
 
-## STEPS TO DEPLOY YOUR BOT
+## FORK THE KING-BILAL-MD REPO
 
 
-1, <a href="https://github.com/Bilalking001/KING-BILAL-MD/fork"><img src="https://img.shields.io/badge/Fork%20My%20Repository-blue" alt="Fork my repository" width="300"></a>
+1, <a href="https://github.com/Bilalking00q1/KING-BILAL-MD/fork"><img src="https://img.shields.io/badge/FORK%20THE%20REPO-blue" alt="Fork my repository" width="300"></a>
 
 2, TAP ON BILAL TECH APP DOWN THERE
 
