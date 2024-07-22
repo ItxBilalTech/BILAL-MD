@@ -17,6 +17,25 @@
  # *_GET | [SESSION ID](https://replit.com/@bilal99786bilal/KING-BILAL?v=1) | FOR BILAL-MD_*
   
   
+## FORK THE KING-BILAL-MD REPO
+
+
+1, <a href="https://github.com/Bilalking00q1/KING-BILAL-MD/fork"><img src="https://img.shields.io/badge/FORK%20THE%20REPO-blue" alt="Fork my repository" width="300"></a>
+
+## *_DEPLOY [KING-BILAL-MD](https://dashboard.heroku.com/new?button-url=https://github.com/keithkeizzah/ALPHA-MD1&template=https://github.com/Bilalking001/KING-BILAL-MD) ON HEROKU_*  
+<h1 align="center">
+ 
+<br>
+
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+
+ <h1 align="center">
+
+## REPO PROTECTED WITH LICENSE 
+### KING-BILAL-MD IS RELEASED UNDER THE [MIT LICENSE](https://opensource.org/licenses/MIT).
+
+
 <a><img src='https://i.imgur.com/LyHc3i.gif'/></a>
 
 ### KING-BILAL-MD WHATSAPP SUPPORT CHANNEL
@@ -36,21 +55,3 @@
 
    
  <a><img src='https://i.imgur.com/LyHic3i.gif'/></a
-
-## FORK THE KING-BILAL-MD REPO
-
-
-1, <a href="https://github.com/Bilalking00q1/KING-BILAL-MD/fork"><img src="https://img.shields.io/badge/FORK%20THE%20REPO-blue" alt="Fork my repository" width="300"></a>
-
-## *_DEPLOY [KING-BILAL-MD](https://dashboard.heroku.com/new?button-url=https://github.com/keithkeizzah/ALPHA-MD1&template=https://github.com/Bilalking001/KING-BILAL-MD) ON HEROKU_*  
-<h1 align="center">
- 
-<br>
-
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-
- <h1 align="center">
-
-## REPO PROTECTED WITH LICENSE 
-### KING-BILAL-MD IS RELEASED UNDER THE [MIT LICENSE](https://opensource.org/licenses/MIT).
