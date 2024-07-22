@@ -2,7 +2,7 @@
  <h1 align="center">👑 KING-BILAL-MD 👑</h1>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
       
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=green&lines=THIS+IS+KING-BILAL-MD;BEST+WHATSAPP+BOT)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=yellow&lines=THIS+IS+KING-BILAL-MD;BEST+WHATSAPP+BOT)](https://git.io/typing-svg)
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
  
@@ -14,13 +14,18 @@
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
  
  # *_GET | [SESSION ID](https://replit.com/@bilal99786bilal/KING-BILAL?v=1) | FOR BILAL-MD_*
-
   <a><img src='https://i.imgur.com/LyHc3i.gif'/></a>
+
+
 
 ### *_FORK THE KING-BILAL-MD REPO_*
 
 
 1, <a href="https://github.com/Bilalking00q1/KING-BILAL-MD/fork"><img src="https://img.shields.io/badge/FORK%20THE%20REPO-blue" alt="FORK THE REPO" width="300"></a>
+
+
+
+<a><img src='https://i.imgur.com/LyHc3i.gif'/></a>
 
 ## *_DEPLOY [KING-BILAL-MD](https://dashboard.heroku.com/new?button-url=https://github.com/keithkeizzah/ALPHA-MD1&template=https://github.com/Bilalking001/KING-BILAL-MD) ON HEROKU_*  
 <h1 align="center">
