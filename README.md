@@ -45,7 +45,7 @@
 ## *_DEPLOY KING-BILAL-MD ON HEROKU_*  
 <h1 align="center">
  
- ***[DEPLOY](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/keithkeizzah/ALPHA-MD1&template=https://github.com/Bilalking001/KING-BILAL-MD.git)***
+ [DEPLOY](https://www.herokucdn.com/deploy/button.svghttps://dashboard.heroku.com/new?button-url=https://github.com/keithkeizzah/ALPHA-MD1&template=https://github.com/Bilalking001/KING-BILAL-MD.git)***
 
 <br>
 
