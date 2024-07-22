@@ -27,7 +27,7 @@
 
 <a><img src='https://i.imgur.com/LyHc3i.gif'/></a>
 
-## *_DEPLOY [KING-BILAL-MD](https://dashboard.heroku.com/new?button-url=https://github.com/keithkeizzah/ALPHA-MD1&template=https://github.com/Bilalking001/KING-BILAL-MD) ON HEROKU_*  
+## *_DEPLOY [KING-BILAL-MD](https://dashboard.heroku.com/new?button-url=https://github.com/Bilalking001/KING-BILAL-MD&template=https://github.com/Bilalking001/KING-BILAL-MD) ON HEROKU_*  
 <h1 align="center">
 
  <a><img src='https://i.imgur.com/LyHc3i.gif'/></a>
