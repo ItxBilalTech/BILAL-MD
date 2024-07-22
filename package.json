@@ -1,16 +1,16 @@
 {
-  "name": "Ethix-MD",
+  "name": "KING-BILAL-MD",
   "version": "10.8.1",
-  "description": "Ethix-MD latest multi device whatsapp bot",
+  "description": "KING-BILAL-MD latest multi device whatsapp bot",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "pm2 start src/index.js --deep-monitoring --attach --name Ethix-MD",
-    "stop": "pm2 stop Ethix-MD",
-    "restart": "pm2 restart Ethix-MD"
+    "start": "pm2 start src/index.js --deep-monitoring --attach --name KING-BILAL-MD",
+    "stop": "pm2 stop KING-BILAL-MD",
+    "restart": "pm2 restart KING-BILAL-MD"
   },
-  "keywords": ["ethix-md", "whatsapp-bot", "whatsapp md bot"],
-  "author": "Ethix-Xsid",
+  "keywords": ["king-bilal-md", "whatsapp-bot", "whatsapp md bot"],
+  "author": "BILAL",
   "license": "ISC",
   "dependencies": {
     "@distube/ytdl-core": "^4.13.5",
