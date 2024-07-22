@@ -10,13 +10,13 @@ const video = async (m, Matrix) => {
   const validCommands = ['video', 'ytmp4', 'vid', 'ytmp4doc'];
 
   if (validCommands.includes(cmd)) {
-    if (!text) return m.reply('Give a YouTube URL or search query.');
+    if (!text) return m.reply('Type This \n\n .video mera nabi mera nabi naat');
 
     try {
-      await m.React("🕘");
+      await m.React("🌹");
 
       const isUrl = ytdl.validateURL(text);
-      await m.React("⬇️");
+      await m.React("🖇️");
 
       const sendVideoMessage = async (videoInfo, finalVideoBuffer) => {
         if (cmd === 'ytmp4doc') {
@@ -24,18 +24,18 @@ const video = async (m, Matrix) => {
             document: finalVideoBuffer,
             mimetype: 'video/mp4',
             fileName: `${videoInfo.title}.mp4`,
-            caption: `> ${videoInfo.title}\n> © Powered by 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿`,
+            caption: `> ${videoInfo.title}\n> KING BILAL-MD`,
           };
           await Matrix.sendMessage(m.from, docMessage, { quoted: m });
         } else {
           const videoMessage = {
             video: finalVideoBuffer,
             mimetype: 'video/mp4',
-            caption: `> ${videoInfo.title}\n> © POWERED BY 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿`,
+            caption: `KING BILAL-MD`,
           };
           await Matrix.sendMessage(m.from, videoMessage, { quoted: m });
         }
-        await m.React("✅");
+        await m.React("✔️");
       };
 
       if (isUrl) {
@@ -52,19 +52,19 @@ const video = async (m, Matrix) => {
             const videoInfo = await yts({ videoId: ytdl.getURLVideoID(text) });
             await sendVideoMessage(videoInfo, finalVideoBuffer);
           } catch (err) {
-            console.error('Error sending video:', err);
-            m.reply('Error sending video.');
-            await m.React("❌");
+            console.error('Video Not Downloaded Sorry:', err);
+            m.reply('Video Not Downloaded Sorry');
+            await m.React("😭");
           }
         });
       } else {
         const searchResult = await yts(text);
         const firstVideo = searchResult.videos[0];
-        await m.React("⬇️");
+        await m.React("🎗️");
 
         if (!firstVideo) {
-          m.reply('Video not found.');
-          await m.React("❌");
+          m.reply('Video Not Downloaed Sorry');
+          await m.React("😭");
           return;
         }
 
@@ -80,16 +80,16 @@ const video = async (m, Matrix) => {
             const finalVideoBuffer = Buffer.concat(videoBuffer);
             await sendVideoMessage(firstVideo, finalVideoBuffer);
           } catch (err) {
-            console.error('Error sending video:', err);
-            m.reply('Error sending video.');
-            await m.React("❌");
+            console.error('Video Not Downloaed Sorry:', err);
+            m.reply('Video Not Downloaed Sorry');
+            await m.React("😭");
           }
         });
       }
     } catch (error) {
-      console.error("Error generating response:", error);
-      m.reply('An error occurred while processing your request.');
-      await m.React("❌");
+      console.error("KING BILAL-MD ERROR !!!:", error);
+      m.reply('KING BILAL-MD ERROR !!!');
+      await m.React("😭");
     }
   }
 };
