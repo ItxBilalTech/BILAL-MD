@@ -42,20 +42,10 @@
 
 1, <a href="https://github.com/Bilalking00q1/KING-BILAL-MD/fork"><img src="https://img.shields.io/badge/FORK%20THE%20REPO-blue" alt="Fork my repository" width="300"></a>
 
-2, TAP ON BILAL TECH APP DOWN THERE
-
-
-
-3, CONNECT TO WHATSAPP WITH PAIRING CODE OR QR
-
-
-
-4, TAP DEPLOY.., AND DEPLOY IT ON HEROKU ..
-
-## 𝐂𝐋𝐈𝐂𝐊 𝐎𝐍 HEROKU OR 𝐀𝐏𝐏 𝐓𝐎 𝐃𝐄𝐏𝐋𝐎𝐘  
+## *_DEPLOY KING-BILAL-MD ON HEROKU_*  
 <h1 align="center">
  
- ***[![Tap to deploy on heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/keithkeizzah/ALPHA-MD1&template=https://github.com/Bilalking001/KING-BILAL-MD.git)***
+ ***[DEPLOY](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/keithkeizzah/ALPHA-MD1&template=https://github.com/Bilalking001/KING-BILAL-MD.git)***
 
 <br>
 
