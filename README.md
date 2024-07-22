@@ -1,5 +1,3 @@
-#### get session id for king bilal md fromm [click for session id](https://replit.com/@bilal99786bilal/KING-BILAL?v=1) and deploy
-
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
  <h1 align="center">👑 KING-BILAL-MD 👑</h1>
@@ -20,7 +18,7 @@
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
  <h1 align="center">  SCAN SESSION </h1>
  
-
+ # *_GET | [SESSION ID](https://replit.com/@bilal99786bilal/KING-BILAL?v=1) | FOR BILAL-MD_*
   <a href="https://replit.com/@bilal99786bilal/KING-BILAL?v=1"><img src="https://img.shields.io/badge/Pair%20session%20code-white" alt="𝐏𝐚𝐢𝐫 𝐬𝐞𝐬𝐬𝐢𝐨𝐧 𝐜𝐨𝐝𝐞" width="300"></a>
 
 
