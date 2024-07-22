@@ -1,8 +1,5 @@
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
  <h1 align="center">👑 KING-BILAL-MD 👑</h1>
-
-
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
       
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=pink&lines=INTRODUCING+KING-BILAL-MD+THE+FASTEST+WHATSAPP+BOT)](https://git.io/typing-svg)
@@ -16,18 +13,13 @@
 
   <a href="https://ibb.co/N6NMDtn"><img src="https://telegra.ph/file/466fd9320e8a158666c95.jpg" alt="01" border="0" /></a>                     
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
- <h1 align="center">  SCAN SESSION </h1>
  
  # *_GET | [SESSION ID](https://replit.com/@bilal99786bilal/KING-BILAL?v=1) | FOR BILAL-MD_*
-  <a href="https://replit.com/@bilal99786bilal/KING-BILAL?v=1"><img src="https://img.shields.io/badge/Pair%20session%20code-white" alt="𝐏𝐚𝐢𝐫 𝐬𝐞𝐬𝐬𝐢𝐨𝐧 𝐜𝐨𝐝𝐞" width="300"></a>
-
-
-  <a href="https://replit.com/@bilal99786bilal/KING-BILAL?v=1"><img src="https://img.shields.io/badge/qr%20session%20code-orange" alt="𝐐𝐫 𝐬𝐞𝐬𝐬𝐢𝐨𝐧 𝐜𝐨𝐝𝐞" width="300"></a>
+  
+  
 <a><img src='https://i.imgur.com/LyHc3i.gif'/></a>
-## 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗠𝗘 𝗚𝗘𝗘
-## 𝐏𝐥𝐞𝐚𝐬𝐞 𝐣𝐨𝐢𝐧 𝐦𝐲 𝐜𝐡𝐚𝐧𝐧𝐞𝐥 𝐚𝐧𝐝 𝐠𝐞𝐭 𝐟𝐫𝐞𝐞 𝐜𝐜 𝐚𝐧𝐝 𝐮𝐩𝐝𝐚𝐭𝐞𝐬👇👇
 
-
+### KING-BILAL-MD WHATSAPP SUPPORT CHANNEL
 <p align="centre">
   <a href="https://chat.whatsapp.com/Bjbecj0p5lAFIhCxKLoljs">
     <img align="left" alt="SIEGRIN | Whastapp" width="86px" src="https://raw.githubusercontent.com/PikaBotz/My_Personal_Space/main/Images/AnyaBot_pics/Anya_v2/Whatsapp.svg" />
