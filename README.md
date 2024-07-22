@@ -4,7 +4,7 @@
        
 </p>
 
-<p align = center>   <img src="hhttps://i.ibb.co/HdR7XKm/BILAL-MD.jpg" alt="GIF" width="600" height="300"/> </p>
+<p align = center>   <img src="hhttps://i.ibb.co/HdR7XKm/BILAL-MD.jpg" alt="img" width="600" height="300"/> </p>
   
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
  
