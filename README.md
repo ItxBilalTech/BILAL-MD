@@ -42,11 +42,9 @@
 
 1, <a href="https://github.com/Bilalking00q1/KING-BILAL-MD/fork"><img src="https://img.shields.io/badge/FORK%20THE%20REPO-blue" alt="Fork my repository" width="300"></a>
 
-## *_DEPLOY KING-BILAL-MD ON HEROKU_*  
+## *_DEPLOY [KING-BILAL-MD](https://dashboard.heroku.com/new?button-url=https://github.com/keithkeizzah/ALPHA-MD1&template=https://github.com/Bilalking001/KING-BILAL-MD) ON HEROKU_*  
 <h1 align="center">
  
- [DEPLOY](https://www.herokucdn.com/deploy/button.svghttps://dashboard.heroku.com/new?button-url=https://github.com/keithkeizzah/ALPHA-MD1&template=https://github.com/Bilalking001/KING-BILAL-MD.git)***
-
 <br>
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
@@ -54,29 +52,5 @@
 
  <h1 align="center">
 
-
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-   
-
-
-## Contributions
-
-
-Contributions to *KING-BILAL-MD* are welcome! If you have ideas for new features, improvements, or bug fixes, feel free to open an issue or submit a pull request.
-## THANKS TO 👇
-## [SPECIAL THANKS TO MR WASI FOR HELP](https://github.com/Itxxwasi)
-## [THANKS TO KEITH TECH FOR BASE](https://github.com/keithkzah)
-
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-
-## License
-
-The *👑 KING-BILAL-MD 👑* is released under the [MIT License](https://opensource.org/licenses/MIT).
-
-Enjoy the diverse features of the *👑 KING-BILAL-MD 👑*  to enhance your Whatsapp more enjoyable
-☣Powered by KING BILAL 
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-
+## REPO PROTECTED WITH LICENSE 
+### KING-BILAL-MD IS RELEASED UNDER THE [MIT LICENSE](https://opensource.org/licenses/MIT).
