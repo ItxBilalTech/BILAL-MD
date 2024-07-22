@@ -1,17 +1,10 @@
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
  <h1 align="center">👑 BILAL - MD 👑</h1>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-      
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=yellow&lines=THIS+IS+KING-BILAL-MD;BEST+WHATSAPP+BOT)](https://git.io/typing-svg)
-
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
- 
+       
 </p>
 
-
-
-  <a href="https://ibb.co/N6NMDtn"><img src="https://i.ibb.co/HdR7XKm/BILAL-MD.jpg" alt="01" border="0" /></a>                     
-
+<p align = center>   <img src="hhttps://i.ibb.co/HdR7XKm/BILAL-MD.jpg" alt="GIF" width="600" height="300"/> </p>
   
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
  
@@ -23,7 +16,7 @@
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
-## *_DEPLOY [BILAL-MD](https://dashboard.heroku.com/new?button-url=https://github.com/Bilalking001/KING-BILAL-MD&template=https://github.com/Bilalking001/BILAL-MD) ON HEROKU_*  
+# *_DEPLOY [BILAL-MD](https://dashboard.heroku.com/new?button-url=https://github.com/Bilalking001/KING-BILAL-MD&template=https://github.com/Bilalking001/BILAL-MD) ON HEROKU_*  
 <h1 align="center">
 
  <a><img src='https://i.imgur.com/LyHc3i.gif'/></a>
