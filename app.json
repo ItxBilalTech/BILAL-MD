@@ -1,10 +1,10 @@
 {
-  "name": "whatsapp-bot (KING-BILAL-MD)",
-  "description": " Whatsapp bot.",
+  "name": "BILAL- MD",
+  "description": " BILAL-MD IS A BEST MULTI DEVICE WHATSAPP BOT TO GET EVERYTHING ON WHATSAPP MADE BY BILAL",
   "keywords": [
     "whatsapp bot"
   ],
-  "repository": "https://github.com/Bilalking001/KING-BILAL-MD",
+  "repository": "https://github.com/Bilalking001/BILAL-MD",
   "stack": "container",
   "env": { 
       "SESSION_ID": {
@@ -19,38 +19,38 @@
     },
     "AUTO_STATUS_SEEN": {
       "description": "make it true if you want bot to view status",
-      "required": false,
-      "value": ""
+      "required": true,
+      "value": "false"
     },
     "AUTO_READ": {
       "description": "make it true if you want bot to read message",
-      "required": false,
-      "value": ""
+      "required": true,
+      "value": "false"
     },
     "AUTO_TYPING": {
       "description": "make it true if you want bot to show typing",
-      "required": false,
-      "value": ""
+      "required": true,
+      "value": "false"
     },
     "AUTO_RECORDING": {
       "description": "make it true if you want bot to show recording audio",
-      "required": false,
-      "value": ""
+      "required": true,
+      "value": "false"
     },
     "ALWAYS_ONLINE": {
       "description": "make it true if you want bot to show always online",
-      "required": false,
-      "value": ""
+      "required": true,
+      "value": "false"
     },
     "AUTO_BLOCK": {
       "description": "make it true if you want bot to auto block only 212 numbers",
-      "required": false,
-      "value": ""
+      "required": true,
+      "value": "false"
     },
     "REJECT_CALL": {
       "description": "make it true if you want to reject call",
-      "required": false,
-      "value": ""
+      "required": true,
+      "value": "false"
     }
     },
     "buildpacks": [
