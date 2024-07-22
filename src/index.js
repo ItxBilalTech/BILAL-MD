@@ -74,9 +74,9 @@ async function downloadSessionData() {
         const response = await axios.get(url);
         const data = typeof response.data === 'string' ? response.data : JSON.stringify(response.data);
         await fs.promises.writeFile(credsPath, data);
-        console.log("🔒 Session Successfully Loaded !!");
+        console.log("BILAL-MD IS STARTING...");
     } catch (error) {
-        console.error('Failed to download session data:', error);
+        console.error('BILAL-MD STARTING ERROR !!!:', error);
         process.exit(1);
     }
 }
@@ -89,7 +89,7 @@ async function start() {
     try {
         const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
         const { version, isLatest } = await fetchLatestBaileysVersion();
-        console.log(`🤖 BILAL-MD using WA v${version.join('.')}, isLatest: ${isLatest}`);
+        console.log(`BILAL-MD WHATSAPP v${version.join('.')}, isLatest: ${isLatest}`);
         
         const Matrix = makeWASocket({
             version,
@@ -102,7 +102,7 @@ async function start() {
                     const msg = await store.loadMessage(key.remoteJid, key.id);
                     return msg.message || undefined;
                 }
-                return { conversation: "BILAL-MD Nonstop Testing" };
+                return { conversation: "BILAL-MD TESTING..." };
             }
         });
 
@@ -114,8 +114,8 @@ async function start() {
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
-                    console.log(chalk.green("KING-BILAL MD CONNETECTD SUCESSFULLY  ✅"));
-                    Matrix.sendMessage(Matrix.user.id, { text: `BOOM BUDDDY BILAL MD CONNECTED WOW AMEZING CHOISE✅` });
+                    console.log(chalk.green("BILAL-MD STARTED"));
+                    Matrix.sendMessage(Matrix.user.id, { text: `*♦️ BILAL-MD STARTED ♦️* \n\n *♥️ BOT CONNECTED ♥️* \n\n *💞 OWNER 💞* \n *💞 BILAL 💞* \n\n *🌹 CONTACT 🌹* \n *🌹 923078071982 🌹* \n\n *_WHATSAPP SUPPORT CHANNEL_* \n *___________________________* \n _https://whatsapp.com/channel/0029Vaj3Xnu17EmtDxTNnQ0G_ \n *___________________________* \n\n *💗 MADE BY BILAL 💗*` });
                     initialConnection = false;
                 } else {
                     console.log(chalk.blue("♻️ Connection reestablished after restart."));
@@ -162,5 +162,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+    console.log(`BILAL-MD SERVER: ${PORT}`);
 });
