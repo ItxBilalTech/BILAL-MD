@@ -10,7 +10,7 @@
 
 
 
-  <a href="https://ibb.co/N6NMDtn"><img src="https://telegra.ph/file/466fd9320e8a158666c95.jpg" alt="01" border="0" /></a>                     
+  <a href="https://ibb.co/N6NMDtn"><img src="https://i.ibb.co/HdR7XKm/BILAL-MD.jpg" alt="01" border="0" /></a>                     
 
   
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
@@ -19,15 +19,11 @@
  
   <a><img src='https://i.imgur.com/LyHc3i.gif'/></a>
 
-### *_FORK THE KING-BILAL-MD REPO_*
-
-
-1, <a href="https://github.com/Bilalking00q1/KING-BILAL-MD/fork"><img src="https://img.shields.io/badge/FORK%20THE%20REPO-blue" alt="FORK THE REPO" width="300"></a>
-
+# *_FORK THE [BILAL-MD](https://github.com/Bilalking00q1/KING-BILAL-MD/fork) REPO_*
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
-## *_DEPLOY [KING-BILAL-MD](https://dashboard.heroku.com/new?button-url=https://github.com/Bilalking001/KING-BILAL-MD&template=https://github.com/Bilalking001/BILAL-MD) ON HEROKU_*  
+## *_DEPLOY [BILAL-MD](https://dashboard.heroku.com/new?button-url=https://github.com/Bilalking001/KING-BILAL-MD&template=https://github.com/Bilalking001/BILAL-MD) ON HEROKU_*  
 <h1 align="center">
 
  <a><img src='https://i.imgur.com/LyHc3i.gif'/></a>
