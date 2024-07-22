@@ -2,7 +2,7 @@
  <h1 align="center">👑 KING-BILAL-MD 👑</h1>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
       
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=black&lines=INTRODUCING+KING-BILAL-MD+BEST+WHATSAPP++BOT)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=green&lines=THIS+IS+KING-BILAL-MD;BEST+WHATSAPP+BOT)](https://git.io/typing-svg)
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
  
