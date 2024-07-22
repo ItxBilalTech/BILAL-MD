@@ -28,15 +28,14 @@
    
    <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
-## 𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗧𝗛𝗘 𝗢𝗪𝗡𝗘𝗥 𝗨𝗦𝗜𝗡𝗚 𝗧𝗛𝗘 𝗕𝗘𝗟𝗢𝗪 𝗕𝗨𝗧𝗧𝗢𝗡 𝗔𝗣𝗣
+## *_CONTACT TO BILAL KING_*
 
 <p align="left">
-  <a href="https://wa.me/+923078071982?text=Hello%20bilal~tech%20...%20I%20need%20some%20help%20in%20bilal%20md">
+  <a href="https://wa.me/+923078071982?text=ASSALAMUALAIKUM%20BILAL%20...%20YOUR%20BOT%20IS%20BEST">
     <img align="centre" alt="SIEGRIN | Whastapp" width="86px" src="https://raw.githubusercontent.com/PikaBotz/My_Personal_Space/main/Images/AnyaBot_pics/Anya_v2/Whatsapp.svg" />
 
    
- <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+ <a><img src='https://i.imgur.com/LyHic3i.gif'/></a
 
 ## STEPS TO DEPLOY YOUR BOT
 
