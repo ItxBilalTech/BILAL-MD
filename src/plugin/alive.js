@@ -12,13 +12,13 @@ const alive = async (m, Matrix) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).toLowerCase() : '';
     if (['alive', 'uptime', 'runtime'].includes(cmd)) {
 
-  const uptimeMessage = `*🤖 BILAL-MD Status Overview*
+  const uptimeMessage = `*BILAL-MD IS ALIVE NOW*
 _________________________________________
 
-*📆 ${days} Day*
-*🕰️ ${hours} Hour*
-*⏳ ${minutes} Minute*
-*⏲️ ${seconds} Second*
+*🌹 ${days} DAYS*
+*🌹 ${hours} HOURS*
+*🌹 ${minutes} MINUTES*
+*🌹 ${seconds} SECONS*
 _________________________________________
 `;
 
@@ -26,7 +26,7 @@ _________________________________________
         {
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
-            display_text: "MENU",
+            display_text: "BILAL-MD MENU",
             id: `.menu`
           })
         },
@@ -51,7 +51,7 @@ _________________________________________
             text: uptimeMessage
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
-            text: "© Powered By BILAL-MD�"
+            text: "*|😍| BILAL-MD WHATSAPP BOT |😍|"
           }),
           header: proto.Message.InteractiveMessage.Header.create({
             title: "",
