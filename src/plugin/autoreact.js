@@ -9,24 +9,24 @@ const autoreadCommand = async (m, Matrix) => {
   const text = m.body.slice(prefix.length + cmd.length).trim().toLowerCase();
 
   if (cmd === 'autoreact') {
-    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+    if (!isCreator) return m.reply("_THIS COMMAND IS ONLY FOR ME_");
     let responseMessage;
 
     if (text === 'on') {
       config.AUTO_REACT = true;
-      responseMessage = "AUTO_REACT has been enabled.";
+      responseMessage = "AUTO_REACT ACTIVATED";
     } else if (text === 'off') {
       config.AUTO_REACT = false;
-      responseMessage = "AUTO_REACT has been disabled.";
+      responseMessage = "AUTO_REACT ACTIVED";
     } else {
-      responseMessage = "Usage:\n- `autoreact on`: Enable Auto-React\n- `autoreact off`: Disable Auto-React";
+      responseMessage = "Example \n- Type `autoreact on` to activate auto-reacys \n- type `autoreact off`to De-activate Auto-React";
     }
 
     try {
       await Matrix.sendMessage(m.from, { text: responseMessage }, { quoted: m });
     } catch (error) {
-      console.error("Error processing your request:", error);
-      await Matrix.sendMessage(m.from, { text: 'Error processing your request.' }, { quoted: m });
+      console.error("BIL-MD ERROR !!!", error);
+      await Matrix.sendMessage(m.from, { text: 'BIL-MD ERROR !!!' }, { quoted: m });
     }
   }
 };
