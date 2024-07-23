@@ -4,7 +4,7 @@
        
 </p>
 
-  <img alt="FLASH-MD" width="500" height="450" src="https://i.ibb.co/HdR7XKm/BILAL-MD.jpg">
+  <img alt="BILAL-MD" width="500" height="350" src="https://i.ibb.co/HdR7XKm/BILAL-MD.jpg">
   
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
  
@@ -12,11 +12,11 @@
  
   <a><img src='https://i.imgur.com/LyHc3i.gif'/></a>
 
-# *_FORK THE [BILAL-MD](https://github.com/Bilalking00q1/KING-BILAL-MD/fork) REPO_*
+# *_FORK THE [BILAL-MD](https://github.com/BILALxTECH/KING-BILAL-MD/fork) REPO_*
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
-# *_DEPLOY [BILAL-MD](https://dashboard.heroku.com/new?button-url=https://github.com/Bilalking001/KING-BILAL-MD&template=https://github.com/Bilalking001/BILAL-MD) ON HEROKU_*  
+# *_DEPLOY [BILAL-MD](https://dashboard.heroku.com/new?button-url=https://github.com/BILALxTECH/KING-BILAL-MD&template=https://github.com/BILALxTECH/BILAL-MD) ON HEROKU_*  
 <h1 align="center">
 
  <a><img src='https://i.imgur.com/LyHc3i.gif'/></a>
