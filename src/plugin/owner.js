@@ -10,11 +10,11 @@ const ownerContact = async (m, gss) => {
     if (cmd === 'owner') {
         try {
             await gss.sendContact(m.from, [ownernumber], m);
-            await m.React("✅");
+            await m.React("🤗");
         } catch (error) {
-            console.error('Error sending owner contact:', error);
-            m.reply('Error sending owner contact.');
-            await m.React("❌");
+            console.error('BILAL-MD ERROR !!!', error);
+            m.reply('BILAL-MD ERROR !!!');
+            await m.React("😭");
         }
     } else if (cmd === 'setenv') {
         const args = text.split(' ');
