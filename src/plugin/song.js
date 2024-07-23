@@ -7,13 +7,13 @@ const song = async (m, Matrix) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
   const text = m.body.slice(prefix.length + cmd.length).trim();
 
-  const validCommands = ['song', 'ytmp3', 'music', 'ytmp3doc'];
+  const validCommands = ['song', 'ytmp3', 'music', 'ytmp3doc', 'play'];
 
   if (validCommands.includes(cmd)) {
-    if (!text) return m.reply('Please provide a YT URL or search query.');
+    if (!text) return m.reply('Type this \n\n *.song* wo mera nabi naat');
 
     try {
-      await m.React("🕘");
+      await m.React("🌹");
 
       const isUrl = ytdl.validateURL(text);
 
@@ -56,7 +56,7 @@ const song = async (m, Matrix) => {
           await Matrix.sendMessage(m.from, audioMessage, { quoted: m });
         }
 
-        await m.React("✅");
+        await m.React("✔️");
       };
 
       if (isUrl) {
@@ -77,7 +77,7 @@ const song = async (m, Matrix) => {
         const firstVideo = searchResult.videos[0];
 
         if (!firstVideo) {
-          m.reply('Audio not found.');
+          m.reply('Song not found Sorry');
           await m.React("❌");
           return;
         }
@@ -95,8 +95,8 @@ const song = async (m, Matrix) => {
         });
       }
     } catch (error) {
-      console.error("Error generating response:", error);
-      m.reply('Error processing your request.');
+      console.error("BIL-MD ERROR !!!:", error);
+      m.reply('BIL-MD ERROR !!!');
       await m.React("❌");
     }
   }
