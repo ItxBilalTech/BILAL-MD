@@ -8,7 +8,7 @@ const ping = async (m, sock) => {
     const end = new Date().getTime();
     const responseTime = (end - start) / 1000;
 
-    const text = `*_BILAL-MD WHATSAPP BOT* \n\n *_SPEED: ${responseTime.toFixed(2)} s_*`;
+    const text = `*♥️ ========> 🌹 <======== ♥️* \n *_😍 BILAL-MD WHATSAPP BOT 😍_* \n *_BOT SPEED =>_* ${responseTime.toFixed(2)}_* \n *♥️ ========> 🌹 <======== ♥️*`;
     sock.sendMessage(m.from, { text }, { quoted: m });
   }
 }
