@@ -3,20 +3,20 @@ const { generateWAMessageFromContent, proto } = pkg;
 import axios from 'axios'; // Import axios for HTTP requests
 
 const handleRepoCommand = async (m, Matrix) => {
-  const repoUrl = 'https://api.github.com/repos/Bilalking001/BILAL-MD';
+  const repoUrl = 'https://api.github.com/repos/BILALxTECH/BILAL-MD';
   try {
     const response = await axios.get(repoUrl);
     const repoData = response.data;
 
     const { full_name, name, forks_count, stargazers_count, created_at, updated_at, owner } = repoData;
 
-    const messageText = `BILAL-MD WHATSAPP BOT:
+    const messageText = `*♦️ BILAL-MD ♦️*
     \n💞 *NAME:* ${name}
-    \n💞 *STARS:* ${stargazers_count}
-    \n💞 *FORKS:* ${forks_count}
-    \n💞 *RELEASING DATE:* ${new Date(created_at).toLocaleDateString()}
-    \n💞 *UPDATED:* ${new Date(updated_at).toLocaleDateString()}
-    \n💞 *DEVELOPER:* BILAL`;
+    💞 *STARS:* ${stargazers_count}
+    💞 *FORKS:* ${forks_count}
+    💞 *RELEASING DATE:* ${new Date(created_at).toLocaleDateString()}
+    💞 *UPDATED:* ${new Date(updated_at).toLocaleDateString()}
+    💞 *DEVELOPER:* BILAL`;
 
     const repoMessage = generateWAMessageFromContent(m.from, {
       viewOnceMessage: {
@@ -30,7 +30,7 @@ const handleRepoCommand = async (m, Matrix) => {
               text: messageText
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: "© Powered By KING-BILAL-MD"
+              text: "*😈 BEST WHATSAPP BOT 😈*"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
              ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/05e1fde9eea24516fd6e0.jpg` } }, { upload: Matrix.waUploadToServer })),
@@ -44,7 +44,7 @@ const handleRepoCommand = async (m, Matrix) => {
                 {
                   name: "quick_reply",
                   buttonParamsJson: JSON.stringify({
-                    display_text: "Contact Deveolper",
+                    display_text: "*BILAL-MD DEVELOPER*",
                     id: ".owner"
                   })
                 },
@@ -52,7 +52,7 @@ const handleRepoCommand = async (m, Matrix) => {
                   name: "cta_url",
                   buttonParamsJson: JSON.stringify({
                     display_text: "FORK BILAL-MD REPO",
-                    url: `https://github.com/Bilalking001/BILAL-MD/fork`
+                    url: `https://github.com/BILALxTECH/BILAL-MD/fork`
                   })
                 },
                 {
