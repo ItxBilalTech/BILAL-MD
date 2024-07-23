@@ -41,7 +41,7 @@ const tempMailCommand = async (m, Matrix) => {
                 {
                     "name": "cta_copy",
                     "buttonParamsJson": JSON.stringify({
-                        "display_text": "COPY EMAIL",
+                        "display_text": "COPY MAIL",
                         "id": "copy_email",
                         "copy_code": tempEmail
                     })
@@ -64,10 +64,10 @@ const tempMailCommand = async (m, Matrix) => {
                         },
                         interactiveMessage: proto.Message.InteractiveMessage.create({
                             body: proto.Message.InteractiveMessage.Body.create({
-                                text: `BILAL-MD TEMPMAIL IS READY \n ${tempEmail}`
+                                text: `*_TEMPMAIL IS READY_* \n ${tempEmail}`
                             }),
                             footer: proto.Message.InteractiveMessage.Footer.create({
-                                text: "*_BILAL-MD WHATSAPP BOT_*"
+                                text: "*_MADE BY BILAL-MD_*"
                             }),
                             header: proto.Message.InteractiveMessage.Header.create({
                                 title: "BILAL-MD TEMPMAIL",
@@ -94,8 +94,8 @@ const tempMailCommand = async (m, Matrix) => {
             await m.React("✔️");
 
         } catch (error) {
-            console.error("Error processing your request:", error);
-            m.reply('Error processing your request.');
+            console.error("BILAL-MD TEMPMAIL ERROR !!!", error);
+            m.reply('BILAL-MD TEMPMAIL ERROR !!!');
             await m.React("❌");
         }
     } else if (selectedId && selectedId.startsWith('check_inbox_')) {
@@ -124,7 +124,7 @@ const tempMailCommand = async (m, Matrix) => {
                         buttons.push({
                             "name": "cta_copy",
                             "buttonParamsJson": JSON.stringify({
-                                "display_text": "COPY FEXT",
+                                "display_text": "COPY TEXT",
                                 "id": "copy_otp",
                                 "copy_code": otpMatch[0]
                             })
@@ -132,13 +132,13 @@ const tempMailCommand = async (m, Matrix) => {
                     }
                 });
             } else {
-                inboxMessages = 'No messages found in the inbox.';
+                inboxMessages = '_NOT ANY EMAIL RECIEVED_';
             }
 
             buttons.push({
                 "name": "quick_reply",
                 "buttonParamsJson": JSON.stringify({
-                    "display_text": "Check Inbox Again",
+                    "display_text": "CHECK MAIL AGAIN",
                     "id": `check_inbox_${email}`
                 })
             });
@@ -155,7 +155,7 @@ const tempMailCommand = async (m, Matrix) => {
                                 text: inboxMessages
                             }),
                             footer: proto.Message.InteractiveMessage.Footer.create({
-                                text: "© Powered By 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿"
+                                text: "*_MADE BY BILAL-MD_*"
                             }),
                             header: proto.Message.InteractiveMessage.Header.create({
                                 title: "",
@@ -179,11 +179,11 @@ const tempMailCommand = async (m, Matrix) => {
             await Matrix.relayMessage(updatedMsg.key.remoteJid, updatedMsg.message, {
                 messageId: updatedMsg.key.id
             });
-            await m.React("✅");
+            await m.React("✔️");
 
         } catch (error) {
-            console.error("Error processing your request:", error);
-            m.reply('Error processing your request.');
+            console.error("BILAL-MD TEMPMAIL ERROR !!!", error);
+            m.reply('BILAL-MD TEMPMAIL ERROR !!!');
             await m.React("❌");
         }
     } else {
