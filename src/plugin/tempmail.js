@@ -23,14 +23,14 @@ const tempMailCommand = async (m, Matrix) => {
 
     if (cmd === 'tempmail') {
         try {
-            await m.React("🕘");
+            await m.React("✔️");
 
             // Generate temporary email
             const genResponse = await fetch('https://tempmail.apinepdev.workers.dev/api/gen');
             const genData = await genResponse.json();
 
             if (!genData.email) {
-                m.reply('Failed to generate temporary email.');
+                m.reply('BILAL-MD TEMPMAIL ERROR !!!');
                 await m.React("❌");
                 return;
             }
@@ -41,7 +41,7 @@ const tempMailCommand = async (m, Matrix) => {
                 {
                     "name": "cta_copy",
                     "buttonParamsJson": JSON.stringify({
-                        "display_text": "Copy Email",
+                        "display_text": "COPY EMAIL",
                         "id": "copy_email",
                         "copy_code": tempEmail
                     })
@@ -49,7 +49,7 @@ const tempMailCommand = async (m, Matrix) => {
                 {
                     "name": "quick_reply",
                     "buttonParamsJson": JSON.stringify({
-                        "display_text": "Check Inbox",
+                        "display_text": "CHECK MAIL",
                         "id": `check_inbox_${tempEmail}`
                     })
                 }
@@ -64,13 +64,13 @@ const tempMailCommand = async (m, Matrix) => {
                         },
                         interactiveMessage: proto.Message.InteractiveMessage.create({
                             body: proto.Message.InteractiveMessage.Body.create({
-                                text: `Generated Temporary Email: ${tempEmail}`
+                                text: `BILAL-MD TEMPMAIL IS READY \n ${tempEmail}`
                             }),
                             footer: proto.Message.InteractiveMessage.Footer.create({
-                                text: "© Powered By 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿"
+                                text: "*_BILAL-MD WHATSAPP BOT_*"
                             }),
                             header: proto.Message.InteractiveMessage.Header.create({
-                                title: "Temporary Email",
+                                title: "BILAL-MD TEMPMAIL",
                                 gifPlayback: true,
                                 subtitle: "",
                                 hasMediaAttachment: false
@@ -91,7 +91,7 @@ const tempMailCommand = async (m, Matrix) => {
             const sentMsg = await Matrix.relayMessage(msg.key.remoteJid, msg.message, {
                 messageId: msg.key.id
             });
-            await m.React("✅");
+            await m.React("✔️");
 
         } catch (error) {
             console.error("Error processing your request:", error);
@@ -103,7 +103,7 @@ const tempMailCommand = async (m, Matrix) => {
         const email = selectedId.slice('check_inbox_'.length);
 
         try {
-            await m.React("🕘");
+            await m.React("🤔");
 
             // Check inbox for the provided email
             const inboxResponse = await fetch(`https://tempmail.apinepdev.workers.dev/api/getmessage?email=${email}`);
@@ -124,7 +124,7 @@ const tempMailCommand = async (m, Matrix) => {
                         buttons.push({
                             "name": "cta_copy",
                             "buttonParamsJson": JSON.stringify({
-                                "display_text": "Copy OTP",
+                                "display_text": "COPY FEXT",
                                 "id": "copy_otp",
                                 "copy_code": otpMatch[0]
                             })
