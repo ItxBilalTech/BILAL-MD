@@ -30,17 +30,17 @@ const song = async (m, Matrix) => {
   const validCommands = ['yts', 'ytsearch'];
 
   if (validCommands.includes(cmd)) {
-    if (!text) return m.reply('Please provide a YouTube URL or search query');
+    if (!text) return m.reply('TypeThis \n\n *.yts* how mera nabi mera nabi naat');
 
     try {
-      await m.React("🕘");
+      await m.React("🌹");
 
       // Search YouTube for the provided query
       const searchResult = await yts(text);
       const topVideos = searchResult.videos.slice(0, 10);
 
       if (topVideos.length === 0) {
-        m.reply('No results found.');
+        m.reply('BIL-MD ERROR !!!');
         await m.React("❌");
         return;
       }
@@ -86,10 +86,10 @@ const song = async (m, Matrix) => {
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `*𝞢𝙏𝞖𝞘𝞦-𝞛𝘿 VIDEO DOWNLOADER*\n\n> *TITLE:* _${title}_\n> *AUTHOR:* _${author}_\n> *DURATION:* _${duration}s_\n> *VIEWS:* _${views}_\n> *URL:* _${url}_`
+                text: `*BILAL-MD*\n\n> *TITLE:* _${title}_\n> *AUTHOR:* _${author}_\n> *TIME:* _${duration}s_\n> *VIEWS:* _${views}_\n> *LINK:* _${url}_`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "© Powered By Ethix-MD"
+                text: "|💞| BILAL |💞| MD |💞|"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image: { url: firstVideo.thumbnail } }, { upload: Matrix.waUploadToServer })),
@@ -103,10 +103,10 @@ const song = async (m, Matrix) => {
                   {
                     name: "single_select",
                     buttonParamsJson: JSON.stringify({
-                      title: "🔖 SELECT A VIDEO",
+                      title: "SELECT VIDEO",
                       sections: [
                         {
-                          title: "😎 Top 10 YouTube Results - Videos",
+                          title: "*BILAL-MD*",
                           highlight_label: "🤩 Top 10",
                           rows: videoButtons
                         },
@@ -116,10 +116,10 @@ const song = async (m, Matrix) => {
                   {
                     name: "single_select",
                     buttonParamsJson: JSON.stringify({
-                      title: "🎧 SELECT AN AUDIO",
+                      title: "SELECT AUDIO",
                       sections: [
                         {
-                          title: "🎶 Top 10 YouTube Results - Audios",
+                          title: "*BILAL-MD*",
                           highlight_label: "🤩 Top 10",
                           rows: audioButtons
                         },
@@ -141,14 +141,14 @@ const song = async (m, Matrix) => {
       await Matrix.relayMessage(msg.key.remoteJid, msg.message, {
         messageId: msg.key.id
       });
-      await m.React("✅");
+      await m.React("✔️");
 
 
       videoIndex += topVideos.length;
       audioIndex += topVideos.length;
     } catch (error) {
-      console.error("Error processing your request:", error);
-      m.reply('Error processing your request.');
+      console.error("BIL-MD ERROR !!!:", error);
+      m.reply('BIL-MD ERROR !!!');
       await m.React("❌");
     }
   } else if (selectedId) {
@@ -223,7 +223,7 @@ const song = async (m, Matrix) => {
           );
         }
       } catch (error) {
-        console.error("Error fetching video details:", error);
+        console.error("BIL-MD ERROR !!!:", error);
       }
     }
   }
