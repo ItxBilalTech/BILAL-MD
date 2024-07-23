@@ -10,24 +10,24 @@ const anticallcommand = async (m, Matrix) => {
   const text = m.body.slice(prefix.length + cmd.length).trim().toLowerCase();
 
   if (cmd === 'anticall') {
-    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+    if (!isCreator) return m.reply("_THIS COMMAND IS ONLY FOR ME_");
     let responseMessage;
 
     if (text === 'on') {
       config.REJECT_CALL = true;
-      responseMessage = "Anti-Call has been enabled.";
+      responseMessage = "ANTI CALL ACTIVATED";
     } else if (text === 'off') {
       config.REJECT_CALL = false;
-      responseMessage = "Anti-Call has been disabled.";
+      responseMessage = "ANTI CALL DE-ACTIVATED";
     } else {
-      responseMessage = "Usage:\n- `anticall on`: Enable Anti-Call\n- `anticall off`: Disable Anti-Call";
+      responseMessage = "Example:\n- type `anticall on` to activate Anti-Call \n- type `anticall off` to De-Activate Anti-Call";
     }
 
     try {
       await Matrix.sendMessage(m.from, { text: responseMessage }, { quoted: m });
     } catch (error) {
-      console.error("Error processing your request:", error);
-      await Matrix.sendMessage(m.from, { text: 'Error processing your request.' }, { quoted: m });
+      console.error("BIL-MD ERROR !!!", error);
+      await Matrix.sendMessage(m.from, { text: 'BIL-MD ERROR !!!' }, { quoted: m });
     }
   }
 };
