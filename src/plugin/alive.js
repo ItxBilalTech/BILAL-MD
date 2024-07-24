@@ -13,28 +13,26 @@ const alive = async (m, Matrix) => {
     if (['alive', 'uptime', 'runtime'].includes(cmd)) {
 
   const uptimeMessage = `*BILAL-MD IS ALIVE NOW*
-_________________________________________
-
-*🌹 ${days} DAYS*
+*_________________________________________*
 *🌹 ${hours} HOURS*
 *🌹 ${minutes} MINUTES*
 *🌹 ${seconds} SECONS*
-*_مطلب کی دنیا ہے جانی🥹_* \n *_اپنے دم پر رہو گے 😇_* \n *_تو بادشاہ کہلاؤ گے 👑_*
-_________________________________________
+*_مطلب کی دنیا ہے جانی🥹_* \n *_اپنے دم پر رہو گے 😇_* \n *_تو بادشاہ کہلاؤ گے 😎_*
+*_________________________________________*
 `;
 
   const buttons = [
         {
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
-            display_text: "BILAL-MD MENU",
+            display_text: "BOT MENU",
             id: `.menu`
           })
         },
         {
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
-            display_text: "PING",
+            display_text: "CHECK PING",
             id: `.ping`
           })
         }
