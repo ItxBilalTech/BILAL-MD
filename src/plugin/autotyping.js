@@ -9,24 +9,24 @@ const autotypingCommand = async (m, Matrix) => {
   const text = m.body.slice(prefix.length + cmd.length).trim().toLowerCase();
 
   if (cmd === 'autotyping') {
-    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+    if (!isCreator) return m.reply("*THIS COMMAND IS ONLY FOR ME**");
     let responseMessage;
 
     if (text === 'on') {
       config.AUTO_TYPING = true;
-      responseMessage = "Auto-Typing has been enabled.";
+      responseMessage = "_AUTO TYPING ACTIVATED_";
     } else if (text === 'off') {
       config.AUTO_TYPING = false;
-      responseMessage = "Auto-Typing has been disabled.";
+      responseMessage = "AUTO TYPING DE-ACTIVATED";
     } else {
-      responseMessage = "Usage:\n- `autotyping on`: Enable Auto-Typing\n- `autotyping off`: Disable Auto-Typing";
+      responseMessage = "Type This \n\n *.autotyping* on";
     }
 
     try {
       await Matrix.sendMessage(m.from, { text: responseMessage }, { quoted: m });
     } catch (error) {
-      console.error("Error processing your request:", error);
-      await Matrix.sendMessage(m.from, { text: 'Error processing your request.' }, { quoted: m });
+      console.error("BILAL-MD ERROR !!!:", error);
+      await Matrix.sendMessage(m.from, { text: 'BILAL-MD ERROR !!!' }, { quoted: m });
     }
   }
 };
