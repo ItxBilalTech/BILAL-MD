@@ -12,22 +12,22 @@ const modeCommand = async (m, Matrix) => {
 
     if (cmd === 'mode') {
         if (!isCreator) {
-            await Matrix.sendMessage(m.from, { text: "*📛 THIS IS AN OWNER COMMAND*" }, { quoted: m });
+            await Matrix.sendMessage(m.from, { text: "*this command is only for me Ok !*" }, { quoted: m });
             return;
         }
 
         if (['public', 'private'].includes(text)) {
             if (text === 'public') {
                 Matrix.public = true;
-                m.reply('Mode has been changed to public.');
+                m.reply('BILAL-MD WORK_TYPE CHANGED TO *public*');
             } else if (text === 'private') {
                 Matrix.public = false;
-                m.reply('Mode has been changed to private.');
+                m.reply('BILAL-MD WORK_TYPE CHANGED TO *private*');
             } else {
-                m.reply("Usage:\n.Mode public/private");
+                m.reply("Type This \n *.mode* public");
             }
         } else {
-            m.reply("Invalid mode. Please use 'public' or 'private'.");
+            m.reply("BILAL-MD ERROR !!!");
         }
     }
 };
