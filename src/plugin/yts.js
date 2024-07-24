@@ -89,7 +89,7 @@ const song = async (m, Matrix) => {
                 text: `*BILAL-MD*\n\n> *TITLE:* _${title}_\n> *AUTHOR:* _${author}_\n> *TIME:* _${duration}s_\n> *VIEWS:* _${views}_\n> *LINK:* _${url}_`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "|💞| BILAL |💞| MD |💞|"
+                text: "*|💞| BILAL |💞| MD |💞|*"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image: { url: firstVideo.thumbnail } }, { upload: Matrix.waUploadToServer })),
@@ -107,7 +107,7 @@ const song = async (m, Matrix) => {
                       sections: [
                         {
                           title: "*BILAL-MD*",
-                          highlight_label: "🤩 Top 10",
+                          highlight_label: "*SEARCHED*",
                           rows: videoButtons
                         },
                       ]
@@ -120,7 +120,7 @@ const song = async (m, Matrix) => {
                       sections: [
                         {
                           title: "*BILAL-MD*",
-                          highlight_label: "🤩 Top 10",
+                          highlight_label: "*SEARCHED*",
                           rows: audioButtons
                         },
                       ]
@@ -173,7 +173,7 @@ const song = async (m, Matrix) => {
        /*  await Matrix.sendMessage(m.from,
             {
               image: { url: thumbnailUrl },
-              caption: `> *TITLE:* ${title}\n> *AUTHOR:* ${author}\n> *DURATION:* ${duration}\n> *© POWERED BY 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿*`,
+              caption: `> *TITLE:* ${title}\n> *AUTHOR:* ${author}\n> *DURATION:* ${duration}\n *🔥 BY BILAL-MD 🔥*`,
               contextInfo: {
                 externalAdReply: {
                   showAdAttribution: true,
@@ -198,7 +198,7 @@ const song = async (m, Matrix) => {
             contextInfo: {
               mentionedJid: [m.sender],
               externalAdReply: {
-                title: "↺ |◁   II   ▷|   ♡",
+                title: "*|💞| BY |💞| BILAL |💞| MD |💞|*",
                 body: `Now playing: ${text}`,
                 thumbnailUrl: thumbnailUrl,
                 sourceUrl: videoUrl,
@@ -223,7 +223,7 @@ const song = async (m, Matrix) => {
           );
         }
       } catch (error) {
-        console.error("BIL-MD ERROR !!!:", error);
+        console.error("BILAL-MD ERROR !!!:", error);
       }
     }
   }
