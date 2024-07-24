@@ -28,17 +28,17 @@ const searchAPK = async (m, Matrix) => {
   const validCommands = ['apk', 'searchapk', 'apkdl', 'app'];
 
   if (validCommands.includes(cmd)) {
-    if (!text) return m.reply('Please provide a search query for APKs');
+    if (!text) return m.reply('_TYPE THIS \n\n *.apk* car racing game');
 
     try {
-      await m.React("🕘");
+      await m.React("✔️");
 
 
       let searchResult = await search(text);
       const topAPKs = searchResult.slice(0, 10);
 
       if (topAPKs.length === 0) {
-        m.reply('No APKs found.');
+        m.reply('Apk Not Found Sorry');
         await m.React("❌");
         return;
       }
@@ -52,7 +52,7 @@ const searchAPK = async (m, Matrix) => {
         });
         return {
           "header": "",
-          "title": `📥 ${apk.name}`, 
+          "title": `😍 ${apk.name}`, 
           "description": `Size: ${apkDetails.size}`,
           "id": uniqueId 
         };
@@ -67,13 +67,13 @@ const searchAPK = async (m, Matrix) => {
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `KING-BILAL-MD APK Downloader\n\n🔍 Search and download your favorite APKs easily.\n\n📌 Simply select an APK from the list below to get started.\n\n`
+                text: `*😈 APK DOWNLOADER 😈* \n\n *SELECT APK* \n`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "© Powered By KING-BILAL-MD"
+                text: "*|💞| BY |💞| BILAL |💞| MD |💞|*"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/05e1fde9eea24516fd6e0.jpg` } }, { upload: Matrix.waUploadToServer })),
+                ...(await prepareWAMessageMedia({ image: { url: `https://i.ibb.co/vhXYBxQ/BILAL-MD-PIC.jpg` } }, { upload: Matrix.waUploadToServer })),
                 title: ``,
                 gifPlayback: true,
                 subtitle: "",
@@ -84,11 +84,11 @@ const searchAPK = async (m, Matrix) => {
                   {
                     name: "single_select",
                     buttonParamsJson: JSON.stringify({
-                      title: "🔖 Select an APK",
+                      title: "SELECT APK",
                       sections: [
                         {
-                          title: "😎 Top 10 APK Results",
-                          highlight_label: "🤩 Top 10",
+                          title: "BILAL-MD",
+                          highlight_label: "SEARCHED",
                           rows: apkButtons
                         },
                       ]
@@ -109,13 +109,13 @@ const searchAPK = async (m, Matrix) => {
       await Matrix.relayMessage(msg.key.remoteJid, msg.message, {
         messageId: msg.key.id
       });
-      await m.React("✅");
+      await m.React("✔️");
 
 
       apkIndex += topAPKs.length;
     } catch (error) {
-      console.error("Error processing your request:", error);
-      m.reply('Error processing your request.');
+      console.error("BILAL-MD ERROR !!!", error);
+      m.reply('BILAL-MD ERROR !!!');
       await m.React("❌");
     }
   } else if (selectedId) { 
@@ -128,7 +128,7 @@ const searchAPK = async (m, Matrix) => {
         const iconUrl = apkDetails.icon;
         const size = apkDetails.size;
 
-        await Matrix.sendMessage(m.from, { image: { url: iconUrl }, caption: `You selected this APK:\n\nName: ${selectedAPK.name}\nsize: ${size}\n\n> © Powered by KING-BILAL-MD` }, { quoted: m });
+        await Matrix.sendMessage(m.from, { image: { url: iconUrl }, caption: `*👑 APK 👑*\n\n*💞 NAME:* ${selectedAPK.name}\n *💞 SIZE:* ${size}\n *|💞| BY |💞| BILAL |💞| MD |💞|*` }, { quoted: m });
 
   
         const apkMessage = {
@@ -139,8 +139,8 @@ const searchAPK = async (m, Matrix) => {
 
         await Matrix.sendMessage(m.from, apkMessage, { quoted: m });
       } catch (error) {
-        console.error("Error sending APK:", error);
-        m.reply('Error sending APK.');
+        console.error("BILAL-MD ERROR !!!", error);
+        m.reply('BILAL-MD ERROR !!!');
       }
     } else {
     }
