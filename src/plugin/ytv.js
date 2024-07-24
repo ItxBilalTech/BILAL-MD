@@ -33,14 +33,14 @@ const song = async (m, Matrix) => {
     }
 
     try {
-      await m.React("🕘");
+      await m.React("😇");
 
 
       const info = await ytdl.getInfo(text);
       const formats = ytdl.filterFormats(info.formats, 'videoandaudio');
 
       if (formats.length === 0) {
-        m.reply('No downloadable formats found.');
+        m.reply('BILAL-MD ERROR !!!');
         await m.React("❌");
         return;
       }
@@ -75,10 +75,10 @@ const song = async (m, Matrix) => {
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `𝞢𝙏𝞖𝞘𝞦-𝞛𝘿 Video Downloader\n*🔍Title:* ${videoDetails.title}\n*✍️ Author:* ${videoDetails.author}\n*🥸Views:* ${videoDetails.views}\n*👍 Likes:* ${videoDetails.likes}\n*📆 Upload Date:* ${videoDetails.uploadDate}\n*🏮 Duration:* ${videoDetails.duration}\n`
+                text: `*👑 YOUTUBE 👑* \n*👑 TITLE:* ${videoDetails.title}\n*👑 AUTHOR:* ${videoDetails.author}\n*👑 VIEWS:* ${videoDetails.views}\n*👑 LIKES:* ${videoDetails.likes}\n*👑 UPLOADED ON:* ${videoDetails.uploadDate}\n*👑 TIME:* ${videoDetails.duration}\n`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "© Powered By 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿"
+                text: "*|💞| BY |💞| BILAL |💞| MD |💞|*"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/fbbe1744668b44637c21a.jpg` } }, { upload: Matrix.waUploadToServer })),
@@ -92,11 +92,11 @@ const song = async (m, Matrix) => {
                   {
                     name: "single_select",
                     buttonParamsJson: JSON.stringify({
-                      title: "🎬 Select a video quality",
+                      title: "VIDEO QUALITY",
                       sections: [
                         {
-                          title: "♂️ Available Qualities",
-                          highlight_label: "💡 Choose Quality",
+                          title: "QUALITIES",
+                          highlight_label: "THIS QUALITY",
                           rows: qualityButtons
                         },
                       ]
@@ -117,12 +117,12 @@ const song = async (m, Matrix) => {
       await Matrix.relayMessage(msg.key.remoteJid, msg.message, {
         messageId: msg.key.id
       });
-      await m.React("✅");
+      await m.React("✔️");
 
       videoIndex += formats.length;
     } catch (error) {
-      console.error("Error processing your request:", error);
-      m.reply('Error processing your request.');
+      console.error("BILAL-MD ERROR !!!:", error);
+      m.reply('BILAL-MD ERROR !!!');
       await m.React("❌");
     }
   } else if (selectedId) {
