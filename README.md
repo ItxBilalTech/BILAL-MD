@@ -8,7 +8,7 @@
   
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
- # *_LET'S START • [B I L A L - M D](https://bilal-md.vercel.app/) •
+ # *_LET'S START • [BILAL - MD](https://bilal-md.vercel.app/) •_*
  
  <a><img src='https://i.imgur.com/LyHc3i.gif'/></a>
 
