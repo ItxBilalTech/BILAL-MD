@@ -44,15 +44,15 @@ const handleRepoCommand = async (m, Matrix) => {
                 {
                   name: "quick_reply",
                   buttonParamsJson: JSON.stringify({
-                    display_text: "*BILAL-MD DEVELOPER*",
+                    display_text: "USER",
                     id: ".owner"
                   })
                 },
                 {
                   name: "cta_url",
                   buttonParamsJson: JSON.stringify({
-                    display_text: "FORK BILAL-MD REPO",
-                    url: `https://github.com/BILALxTECH/BILAL-MD/fork`
+                    display_text: "WEBSITE",
+                    url: `https://bilal-md.vercel.app/`
                   })
                 },
                 {
