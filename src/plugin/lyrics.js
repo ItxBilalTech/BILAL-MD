@@ -11,10 +11,10 @@ const lyricsCommand = async (m, Matrix) => {
     if (!validCommands.includes(cmd)) return;
 
     if (!text) {
-      return m.reply('Please provide a song name to get the lyrics.');
+      return m.reply('Type This \n\n *.lyrics* new naat');
     }
 
-    m.reply('Searching for lyrics, please wait...');
+    m.reply('*_PLEASE WAIT..._*');
 
     const result = await lyricsv2(text).catch(async () => await lyrics(text));
 
@@ -23,18 +23,18 @@ const lyricsCommand = async (m, Matrix) => {
     }
 
     const replyMessage = `
-      *✍️ Title:* ${result.title}
-      *👨‍🎤 Author:* ${result.author}
-      *🔗 Url:* ${result.link}
+      *❤️ TITLE:* ${result.title}
+      *❤️ AUTHOR:* ${result.author}
+      *❤️ LINK:* ${result.link}
 
-      *📝 Lyrics:*\n\n ${result.lyrics}
+      *👑 LYRICS:*\n\n ${result.lyrics}
     `.trim();
 
     m.reply(replyMessage);
 
   } catch (error) {
-    console.error('Error:', error);
-    m.reply('An error occurred while processing the command.');
+    console.error('BILAL-MD ERROR !!!', error);
+    m.reply('BILAL-MD ERROR !!!');
   }
 };
 
