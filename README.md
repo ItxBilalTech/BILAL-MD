@@ -4,7 +4,7 @@
        
 </p>
 
-  <img alt="BILAL-MD" width="600" height="300" src="https://i.ibb.co/vhXYBxQ/BILAL-MD-PIC.jpg">
+  <img alt="BILAL-MD" width="600" height="450" src="https://i.ibb.co/vhXYBxQ/BILAL-MD-PIC.jpg">
   
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
