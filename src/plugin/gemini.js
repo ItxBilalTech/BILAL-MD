@@ -10,14 +10,14 @@ const geminiResponse = async (m, Matrix) => {
 
   const apiKey = config.GEMINI_KEY;
   const genAI = new GoogleGenerativeAI(apiKey);
-  const validCommands = ['gemini', 'vision'];
+  const validCommands = ['gemini', 'bing'];
 
   if (validCommands.includes(cmd)) {
     if (!m.quoted || m.quoted.mtype !== 'imageMessage') {
-      return m.reply(`*Send/Reply with an Image ${prefix + cmd}*`);
+      return m.reply(`_MENTION ANY IMAGE AND TYPE \n\n ${prefix + cmd}_`);
     }
     
-    m.reply("Please wait...");
+    m.reply("*_DOWNLOADING PLEASE WAIT..._*");
 
     try {
       const prompt = text;
@@ -37,8 +37,8 @@ const geminiResponse = async (m, Matrix) => {
       const textResponse = await response.text();
       m.reply(`${textResponse}`);
     } catch (error) {
-      console.error('Error in Gemini Pro Vision:', error);
-      m.reply(`An error occurred: ${error.message}`);
+      console.error('*_BILAL-MD ERROR !!!_*', error);
+      m.reply(`*_BILAL-MD ERROR !!!_* ${error.message}`);
       await m.React("❌");
     }
   }
