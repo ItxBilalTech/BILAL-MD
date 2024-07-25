@@ -9,27 +9,27 @@ const anticallCommand = async (m, Matrix) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
   const text = m.body.slice(prefix.length + cmd.length).trim().toLowerCase();
   
-  const validCommands = ['autostatus', 'autosview', 'autostatusview'];
+  const validCommands = ['autostatus', 'autosview', 'statusseen'];
 
  if (validCommands.includes(cmd)){
-   if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+   if (!isCreator) return m.reply("*_THIS COMMAND IS ONLY FOR ME OK !_*");
     let responseMessage;
 
     if (text === 'on') {
       config.AUTO_STATUS_SEEN = true;
-      responseMessage = "AUTO STATUS SEEN has been enabled.";
+      responseMessage = "_AUTO STATUS SEEN ACTIVATED_";
     } else if (text === 'off') {
       config.AUTO_STATUS_SEEN = false;
-      responseMessage = "AUTO STATUS SEEN has been disabled.";
+      responseMessage = "_AUTO STATUS SEEN DE-ACTIVATED_";
     } else {
-      responseMessage = `Usage:\n- *${prefix + cmd} ON:* Enable AUTO STATUS VIEW\n- *${prefix + cmd} off:* Disable AUTO STATUS SEEN`;
+      responseMessage = `Usage:\n- *${prefix + cmd} ON:* To Activate Auto Status Seen\n- *${prefix + cmd} off:* To De-Activate Auto Status Seen`;
     }
 
     try {
       await Matrix.sendMessage(m.from, { text: responseMessage }, { quoted: m });
     } catch (error) {
-      console.error("Error processing your request:", error);
-      await Matrix.sendMessage(m.from, { text: 'Error processing your request.' }, { quoted: m });
+      console.error("*_BILAL-MD ERROR !!!_*", error);
+      await Matrix.sendMessage(m.from, { text: '*_BILAL-MD ERROR !!!_*' }, { quoted: m });
     }
   }
 };
