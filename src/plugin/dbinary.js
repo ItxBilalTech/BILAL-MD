@@ -9,7 +9,7 @@ const prefixMatch = m.body.match(/^[\\/!#.]/);
   const validCommands = ['dbinary'];
 
    if (validCommands.includes(cmd)) {
-         if (!text) return m.reply('Please provide a text.');
+         if (!text) return m.reply('Type This \n\n *.dbinary* BILAL MD');
          let db = await dBinary(text)
          m.reply(db)
    }
