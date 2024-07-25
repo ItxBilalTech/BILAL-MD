@@ -10,17 +10,17 @@ const setProfilePicture = async (m, gss) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
   const text = m.body.slice(prefix.length + cmd.length).trim();
 
-  const validCommands = ['setppfull', 'setfullprofilepic', 'fullpp', 'setppbot'];
+  const validCommands = ['setppfull', 'setfullprofilepic', 'fullpp', 'setppbot', 'pp'];
 
   if (validCommands.includes(cmd)) {
-    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+    if (!isCreator) return m.reply("*_THIS COMMAND IS ONLY FOR ME OK !_*");
     if (!m.quoted || m.quoted.mtype !== 'imageMessage') {
-      return m.reply(`Send/Reply with an image to set your profile picture ${prefix + cmd}`);
+      return m.reply(`_FIRST MENTION THE PHOTO AND TYPE \n\n ${prefix + cmd}`);
     }
 
     try {
       const media = await m.quoted.download(); // Download the media from the quoted message
-      if (!media) throw new Error('Failed to download media.');
+      if (!media) throw new Error('*_BILAL-MD ERROR !!!_*');
 
       const filePath = `./${Date.now()}.png`;
       await writeFile(filePath, media);
@@ -42,15 +42,15 @@ const setProfilePicture = async (m, gss) => {
             content: img
           }]
         });
-        m.reply('Profile picture updated successfully.');
+        m.reply('_PROFILE PIC CHANGED_');
       } catch (err) {
         throw err;
       } finally {
         await unlink(filePath); // Clean up the downloaded file
       }
     } catch (error) {
-      console.error('Error setting profile picture:', error);
-      m.reply('Error setting profile picture.');
+      console.error('*_BILAL-MD ERROR !!!_*', error);
+      m.reply('*_BILAL-MD ERROR !!!_*');
     }
   }
 };
