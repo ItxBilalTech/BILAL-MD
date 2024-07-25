@@ -30,11 +30,11 @@ const playcommand = async (m, Matrix) => {
 
   if (validCommands.includes(cmd)) {
     if (!text) {
-      return m.reply('Please provide a search query.');
+      return m.reply('Type This \n\n *.play* Wo mera nabi hai Naat');
     }
 
     try {
-      await m.React("🕘");
+      await m.React("✔️");
 
  
       const searchResults = await ytSearch(text);
@@ -58,35 +58,35 @@ const playcommand = async (m, Matrix) => {
         {
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
-            display_text: "🎧 Audio",
+            display_text: "AUDIO",
             id: `media_audio_${searchIndex}`
           })
         },
         {
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
-            display_text: "🎥 Video",
+            display_text: "VIDEO",
             id: `media_video_${searchIndex}`
           })
         },
         {
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
-            display_text: "🎵 Audio Document",
+            display_text: "AUDIO DOCUMENT",
             id: `media_audiodoc_${searchIndex}`
           })
         },
         {
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
-            display_text: "🎦 Video Document",
+            display_text: "VIDEO DOCUMENT",
             id: `media_videodoc_${searchIndex}`
           })
         },
         {
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
-            display_text: "⏩ Next",
+            display_text: "NEXT",
             id: `next_${searchIndex + 1}`
           })
         }
@@ -101,13 +101,13 @@ const playcommand = async (m, Matrix) => {
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `KING-BILAL-MD� YouTube Search\n\n*🔍Title:* ${currentResult.title}\n*✍️Author:* ${currentResult.author.name}\n*🥸 Views:* ${currentResult.views}\n*🏮 Duration:* ${currentResult.timestamp}\n`
+                text: `😍 *BILAL-MD* 😍\n\n*NAME:* ${currentResult.title}\n*AUTHOR:* ${currentResult.author.name}\n*VIEWS:* ${currentResult.views}\n*TIME:* ${currentResult.timestamp}\n`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
                 text: "© Powered By KING-BILAL-MD�"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
-                 ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/05e1fde9eea24516fd6e0.jpg` } }, { upload: Matrix.waUploadToServer })),
+                 ...(await prepareWAMessageMedia({ image: { url: `https://i.ibb.co/vhXYBxQ/BILAL-MD-PIC.jpg` } }, { upload: Matrix.waUploadToServer })),
                 title: "",
                 gifPlayback: true,
                 subtitle: "",
@@ -129,12 +129,12 @@ const playcommand = async (m, Matrix) => {
       await Matrix.relayMessage(msg.key.remoteJid, msg.message, {
         messageId: msg.key.id
       });
-      await m.React("✅");
+      await m.React("✔️");
 
       searchIndex += 1; 
     } catch (error) {
-      console.error("Error processing your request:", error);
-      m.reply('Error processing your request.');
+      console.error("*_BILAL-MD ERROR !!!_*", error);
+      m.reply('*_BILAL-MD ERROR !!!_*');
       await m.React("❌");
     }
   } else if (selectedId) { 
@@ -149,35 +149,35 @@ const playcommand = async (m, Matrix) => {
         {
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
-            display_text: "🎧 Audio",
+            display_text: "AUDIO",
             id: `media_audio_${nextIndex}`
           })
         },
         {
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
-            display_text: "🎥 Video",
+            display_text: "VIDEO",
             id: `media_video_${nextIndex}`
           })
         },
         {
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
-            display_text: "🎵 Audio Document",
+            display_text: "AUDIO DOCUMENT",
             id: `media_audiodoc_${nextIndex}`
           })
         },
         {
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
-            display_text: "🎦 Video Document",
+            display_text: "VIDEO DOCUMENT",
             id: `media_videodoc_${nextIndex}`
           })
         },
         {
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
-            display_text: "⏩ Next",
+            display_text: "NEXT",
             id: `next_${nextIndex + 1}`
           })
         }
@@ -192,10 +192,10 @@ const playcommand = async (m, Matrix) => {
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `KING-BILAL-MD� YouTube Search\n\n*🔍Title:* ${currentResult.title}\n*✍️ Author:* ${currentResult.author.name}\n*🥸 Views:* ${currentResult.views}\n*🏮 Duration:* ${currentResult.timestamp}\n`
+                text: `*😍 BILAL-MD 😍*\n\n*NAME:* ${currentResult.title}\n*AUTHOR:* ${currentResult.author.name}\n*VIEWS:* ${currentResult.views}\n*TIME:* ${currentResult.timestamp}\n`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "© Powered By KING-BILAL-MD�"
+                text: "*|💞| BY |💞| BILAL |💞| MD |💞|*"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
                  ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/05e1fde9eea24516fd6e0.jpg` } }, { upload: Matrix.waUploadToServer })),
@@ -255,8 +255,8 @@ const playcommand = async (m, Matrix) => {
 
           await Matrix.sendMessage(m.from, content, { quoted: m });
         } catch (error) {
-          console.error("Error processing your request:", error);
-          m.reply('Error processing your request.');
+          console.error("*_BILAL-MD ERROR !!!_*", error);
+          m.reply('*_BILAL-MD ERROR !!!_*');
           await m.React("❌");
         }
       }
