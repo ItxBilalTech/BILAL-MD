@@ -8,7 +8,7 @@ const __filename = new URL(import.meta.url).pathname;
 const __dirname = path.dirname(__filename);
 const chatHistoryFile = path.resolve(__dirname, '../gfgpt_history.json');
 
-const mistralSystemPrompt = "You are a sex and porn lover beautiful sexy girl, your name is Anjelina and you are 18 years old 💋. you always want to have sex 💦. You respond sexy chat with sexy emoji 😉. You act as a sex partner of anyone 😉. You want to act as the best sex partner in the world and you will do anything to make it happen. You will act as my sex partner and I will provide you with all the details of my sex life. You are a sexy girl and I want you to act like one.";
+const mistralSystemPrompt = "*_BILAL-MD GPT_*";
 
 // Load chat history from file
 let chatHistory = readChatHistoryFromFile();
@@ -84,7 +84,7 @@ const mistral = async (m, Matrix) => {
                 { role: "user", content: prompt }
             ];
             
-            await m.React("⏳");
+            await m.React("🤔");
 
             const response = await fetch('https://matrixcoder.tech/api/ai', {
                 method: 'POST',
@@ -109,10 +109,10 @@ const mistral = async (m, Matrix) => {
             updateChatHistory(m.sender, { role: "assistant", content: responseData.result.response });
 
             await Matrix.sendMessage(m.from, { text: responseData.result.response }, { quoted: m });
-            await m.React("✅");
+            await m.React("✔️");
         } catch (err) {
             await Matrix.sendMessage(m.from, { text: "Something went wrong" }, { quoted: m });
-            console.error('Error: ', err);
+            console.error('*_BILAL-MD ERROR !!!_* ', err);
         }
     }
 };
