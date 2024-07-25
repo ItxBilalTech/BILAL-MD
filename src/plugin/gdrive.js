@@ -10,7 +10,7 @@ const gdriveDownload = async (m, Matrix) => {
   const validCommands = ['gdrive', 'gd', 'gddownload'];
 
   if (validCommands.includes(cmd)) {
-    if (!text) return m.reply('Please provide a Google Drive URL.');
+    if (!text) return m.reply('_FIRST GET THE GOOGLE DRIVE FILE LINK AND TYPE_ \n\n *${prefix + cmd} Link Paste Here');
 
     try {
       await m.React('🕘');
@@ -20,7 +20,7 @@ const gdriveDownload = async (m, Matrix) => {
 
       if (gdriveInfo && gdriveInfo.status && gdriveInfo.data) {
         const mediaUrl = gdriveInfo.data;
-        const caption = `> © Powered By Ethix-MD`;
+        const caption = `*|💞| BY |💞| BILAL |💞| MD |💞|*`;
 
         // Inferring the file type based on the file extension
         const extension = mediaUrl.split('.').pop().toLowerCase();
@@ -28,13 +28,13 @@ const gdriveDownload = async (m, Matrix) => {
         // Send the media using Matrix.sendMedia
         await Matrix.sendMedia(m.from, mediaUrl, extension, caption, m);
 
-        await m.React('✅');
+        await m.React('✔️');
       } else {
-        throw new Error('Invalid response from Google Drive.');
+        throw new Error('*_BILAL-MD ERROR !!!_*');
       }
     } catch (error) {
-      console.error('Error downloading Google Drive file:', error.message);
-      m.reply('Error downloading Google Drive file.');
+      console.error('*_BILAL-MD ERROR !!!_*', error.message);
+      m.reply('*_BILAL-MD ERROR !!!_*');
       await m.React('❌');
     }
   }
