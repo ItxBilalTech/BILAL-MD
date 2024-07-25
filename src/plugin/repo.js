@@ -3,14 +3,14 @@ const { generateWAMessageFromContent, proto } = pkg;
 import axios from 'axios'; // Import axios for HTTP requests
 
 const handleRepoCommand = async (m, Matrix) => {
-  const repoUrl = 'https://api.github.com/repos/BILALxTECH/BILAL-MD';
+  const repoUrl = 'https://api.github.com/repos/ItxBilalTech/BILAL-MD';
   try {
     const response = await axios.get(repoUrl);
     const repoData = response.data;
 
     const { full_name, name, forks_count, stargazers_count, created_at, updated_at, owner } = repoData;
 
-    const messageText = `*♦️ BILAL-MD ♦️*
+    const messageText = `*💞 BILAL-MD REPO 💞*
     \n💞 *NAME:* ${name}
     💞 *STARS:* ${stargazers_count}
     💞 *FORKS:* ${forks_count}
@@ -51,14 +51,14 @@ const handleRepoCommand = async (m, Matrix) => {
                 {
                   name: "cta_url",
                   buttonParamsJson: JSON.stringify({
-                    display_text: "WEBSITE",
+                    display_text: "MAIN PAGE",
                     url: `https://bilal-md.vercel.app/`
                   })
                 },
                 {
                   name: "cta_url",
                   buttonParamsJson: JSON.stringify({
-                    display_text: "WHATSAPP SUPPORT CHANNEL",
+                    display_text: "BILAL-MD SUPPORT",
                     url: `https://whatsapp.com/channel/0029Vaj3Xnu17EmtDxTNnQ0G`
                   })
                 }
@@ -77,7 +77,7 @@ const handleRepoCommand = async (m, Matrix) => {
     await Matrix.relayMessage(repoMessage.key.remoteJid, repoMessage.message, {
       messageId: repoMessage.key.id
     });
-    await m.React("💞");
+    await m.React("🤠");
 
   } catch (error) {
     console.error("BILAL-MD REPO ERROR !!!:", error);
