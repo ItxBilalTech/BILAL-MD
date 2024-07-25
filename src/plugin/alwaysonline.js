@@ -8,24 +8,24 @@ const alwaysonlineCommand = async (m, Matrix) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
   const text = m.body.slice(prefix.length + cmd.length).trim().toLowerCase();
 
-  if (cmd === 'alwaysonline') {
-    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+  if (cmd === 'online') {
+    if (!isCreator) return m.reply("*_THIS COMMAND IS ONLY FOR ME OK !_*");
     let responseMessage;
 
     if (text === 'on') {
       config.ALWAYS_ONLINE = true;
-      responseMessage = "Always Online has been enabled.";
+      responseMessage = "_ALWAYS ONLINE ACTIVATED_";
     } else if (text === 'off') {
       config.ALWAYS_ONLINE = false;
-      responseMessage = "Always Online has been disabled.";
+      responseMessage = "_ALWAYS ONLINE DE-ACTIVATED_";
     } else {
-      responseMessage = "Usage:\n- `alwaysonline on`: Enable Always Online\n- `alwaysonline off`: Disable Always Online";
+      responseMessage = "Type This:\n- `online on`: for show always online\n- `online off`: for show last seen";
     }
 
     try {
       await Matrix.sendMessage(m.from, { text: responseMessage }, { quoted: m });
     } catch (error) {
-      console.error("Error processing your request:", error);
+      console.error("*_BILAL-MD ERROR !!!_*", error);
       await Matrix.sendMessage(m.from, { text: 'Error processing your request.' }, { quoted: m });
     }
   }
