@@ -19,14 +19,14 @@ const autotypingCommand = async (m, Matrix) => {
       config.AUTO_TYPING = false;
       responseMessage = "AUTO TYPING DE-ACTIVATED";
     } else {
-      responseMessage = "Type This \n\n *.autotyping* on";
+      responseMessage = "Type This \n\n *.autotyping* : To Activate Auto Typing `autotyping off` : To De-Activate Auto Typing";
     }
 
     try {
       await Matrix.sendMessage(m.from, { text: responseMessage }, { quoted: m });
     } catch (error) {
-      console.error("BILAL-MD ERROR !!!:", error);
-      await Matrix.sendMessage(m.from, { text: 'BILAL-MD ERROR !!!' }, { quoted: m });
+      console.error("*_BILAL-MD ERROR !!!_*", error);
+      await Matrix.sendMessage(m.from, { text: '*_BILAL-MD ERROR !!!_*' }, { quoted: m });
     }
   }
 };
