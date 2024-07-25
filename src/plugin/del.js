@@ -12,11 +12,11 @@ const deleteMessage = async (m, gss) => {
 
     if (validCommands.includes(cmd)) {
       if (!isCreator) {
-        return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+        return m.reply("*_THIS COMMAND IS ONLY FOR ME OK !_*");
       }
 
       if (!m.quoted) {
-        return m.reply('✳️ Reply to the message you want to delete');
+        return m.reply('First Mention any Message And Type \n\n *.del*');
       }
 
       const key = {
@@ -28,8 +28,8 @@ const deleteMessage = async (m, gss) => {
       await gss.sendMessage(m.from, { delete: key });
     }
   } catch (error) {
-    console.error('Error deleting message:', error);
-    m.reply('An error occurred while trying to delete the message.');
+    console.error('*_BILAL-MD ERROR !!!_*', error);
+    m.reply('*_BILAL-MD ERROR !!!_*');
   }
 };
 
