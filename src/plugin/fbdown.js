@@ -31,16 +31,16 @@ const facebookCommand = async (m, Matrix) => {
 
   if (validCommands.includes(cmd)) {
     if (!text) {
-      return m.reply('Please provide a Facebook video URL.');
+      return m.reply('_First Go To your Facebook App And Copy The Video Link and Type \n\n *.fb* Link Paste Here');
     }
 
     try {
-      await m.React("🕘");
+      await m.React("✔️");
 
 
       const fbData = await ndown(text);
       if (!fbData.status) {
-        await m.reply('No results found.');
+        await m.reply('*_BILAL-MD ERROR !!!_*');
         await m.React("❌");
         return;
       }
@@ -48,10 +48,10 @@ const facebookCommand = async (m, Matrix) => {
       fbSearchResultsMap.set(fbSearchIndex, fbData);
 
       const sections = [{
-        title: 'Video Qualities',
+        title: 'QUALITY',
         rows: fbData.data.map((video, index) => ({
           header: '',
-          title: `📥 Download ${video.resolution}`,
+          title: `DOWNLOAD ${video.resolution}`,
           description: '',
           id: `media_${index}_${fbSearchIndex}`
         }))
@@ -60,7 +60,7 @@ const facebookCommand = async (m, Matrix) => {
       const buttons = [{
         name: "single_select",
         buttonParamsJson: JSON.stringify({
-          title: '♂️ Select Quality',
+          title: 'SELECT QUALITY',
           sections: sections
         })
       }];
@@ -74,10 +74,10 @@ const facebookCommand = async (m, Matrix) => {
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `KING-BILAL-MD Facebook Video Download\n\n🔍 Select the desired video quality to download.\n\n📌 Choose an option to download.\n\n`
+                text: `*BILAL-MD FB VIDEO*`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "© Powered By KING-BILAL-MD"
+                text: "*|💞| BY |💞| BILAL |💞| MD |💞|*"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
                  ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/05e1fde9eea24516fd6e0.jpg` } }, { upload: Matrix.waUploadToServer })),
@@ -102,12 +102,12 @@ const facebookCommand = async (m, Matrix) => {
       await Matrix.relayMessage(msg.key.remoteJid, msg.message, {
         messageId: msg.key.id
       });
-      await m.React("✅");
+      await m.React("✔️");
 
       fbSearchIndex += 1; 
     } catch (error) {
-      console.error("Error processing your request:", error);
-      await m.reply('Error processing your request.');
+      console.error("*_BILAL-MD ERROR !!!_*", error);
+      await m.reply('*_BILAL-MD ERROR !!!_*');
       await m.React("❌");
     }
   } else if (selectedId) { 
@@ -131,11 +131,11 @@ const facebookCommand = async (m, Matrix) => {
             content = { video: finalMediaBuffer, mimetype: 'video/mp4', caption: '> © Powered by KING-BILAL-MD' };
             await Matrix.sendMessage(m.from, content, { quoted: m });
           } else {
-            await m.reply('The video file size exceeds 300MB.');
+            await m.reply('_This Video Mbs Size Is Up To 300 MB_ \n _I Can't DownloaThis Video Sorry_');
           }
         } catch (error) {
-          console.error("Error processing your request:", error);
-          await m.reply('Error processing your request.');
+          console.error("*_BILAL-MD ERROR !!!_*", error);
+          await m.reply('*_BILAL-MD ERROR !!!_*');
           await m.React("❌");
         }
       }
