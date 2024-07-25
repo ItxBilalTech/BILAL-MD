@@ -12,18 +12,18 @@ const groupSetting = async (m, gss) => {
     const validCommands = ['group'];
     if (!validCommands.includes(cmd)) return;
 
-    if (!m.isGroup) return m.reply("*📛 THIS COMMAND CAN ONLY BE USED IN GROUPS*");
+    if (!m.isGroup) return m.reply("**_THIS COMMAND IS ONLY FOR GROUPS OK !");
     const groupMetadata = await gss.groupMetadata(m.from);
     const participants = groupMetadata.participants;
     const botNumber = await gss.decodeJid(gss.user.id);
     const botAdmin = participants.find(p => p.id === botNumber)?.admin;
     const senderAdmin = participants.find(p => p.id === m.sender)?.admin;
 
-    if (!botAdmin) return m.reply("*📛 BOT MUST BE AN ADMIN TO USE THIS COMMAND*");
-    if (!senderAdmin) return m.reply("*📛 YOU MUST BE AN ADMIN TO USE THIS COMMAND*");
+    if (!botAdmin) return m.reply("*_MAKE ME ADMIN FIRST !_");
+    if (!senderAdmin) return m.reply("*This Command Is Only For Admins !*");
 
     const args = m.body.slice(prefix.length + cmd.length).trim().split(/\s+/);
-    if (args.length < 1) return m.reply(`Please specify a setting (open/close) and optionally a time.\n\nExample:\n*${prefix + cmd} open* or *${prefix + cmd} open 04:00 PM*`);
+    if (args.length < 1) return m.reply(`Type This \n (open/close) and optionally a time.\n\nExample:\n*${prefix + cmd} open* or *${prefix + cmd} open 04:00 PM*`);
 
     const groupSetting = args[0].toLowerCase();
     const time = args.slice(1).join(' ');
@@ -32,18 +32,18 @@ const groupSetting = async (m, gss) => {
     if (!time) {
       if (groupSetting === 'close') {
         await gss.groupSettingUpdate(m.from, 'announcement');
-        return m.reply("Group successfully closed.");
+        return m.reply("_GROUP CLOSED !_");
       } else if (groupSetting === 'open') {
         await gss.groupSettingUpdate(m.from, 'not_announcement');
-        return m.reply("Group successfully opened.");
+        return m.reply("_GROUP OPENED");
       } else {
-        return m.reply(`Invalid setting. Use "open" to open the group and "close" to close the group.\n\nExample:\n*${prefix + cmd} open* or *${prefix + cmd} close*`);
+        return m.reply(`Type This \n "open" to open group and "close" to close group.\n\nExample:\n*${prefix + cmd} open* \n *${prefix + cmd} close*`);
       }
     }
 
     // Check if the provided time is valid
     if (!/^\d{1,2}:\d{2}\s*(?:AM|PM)$/i.test(time)) {
-      return m.reply(`Invalid time format. Use HH:mm AM/PM format.\n\nExample:\n*${prefix + cmd} open 04:00 PM*`);
+      return m.reply(`Type This \n *${prefix + cmd} open 04:00 PM*`);
     }
 
     // Convert time to 24-hour format
@@ -60,26 +60,26 @@ const groupSetting = async (m, gss) => {
 
     scheduledTasks[m.from] = cron.schedule(cronTime, async () => {
       try {
-        console.log(`Executing scheduled task for ${groupSetting} at ${moment().format('HH:mm')} IST`);
+        console.log(`GROUP ! ${groupSetting} at ${moment().format('HH:mm')} IST`);
         if (groupSetting === 'close') {
           await gss.groupSettingUpdate(m.from, 'announcement');
-          await gss.sendMessage(m.from, { text: "Group successfully closed." });
+          await gss.sendMessage(m.from, { text: "_GROUP CLOSED !_" });
         } else if (groupSetting === 'open') {
           await gss.groupSettingUpdate(m.from, 'not_announcement');
-          await gss.sendMessage(m.from, { text: "Group successfully opened." });
+          await gss.sendMessage(m.from, { text: "_GROUP OPENED_" });
         }
       } catch (err) {
-        console.error('Error during scheduled task execution:', err);
-        await gss.sendMessage(m.from, { text: 'An error occurred while updating the group setting.' });
+        console.error('*_BILAL-MD ERROR !!!_*', err);
+        await gss.sendMessage(m.from, { text: '*_BILAL-MD ERROR !!!_*' });
       }
     }, {
-      timezone: "Asia/Kolkata"
+      timezone: "Asia/Karachi"
     });
 
-    m.reply(`Group will be set to "${groupSetting}" at ${time} IST.`);
+    m.reply(`TASK SET "${groupSetting}" at ${time} IST.`);
   } catch (error) {
-    console.error('Error:', error);
-    m.reply('An error occurred while processing the command.');
+    console.error('*_BILAL-MD ERROR !!!_*', error);
+    m.reply('*_BILAL-MD ERROR !!!_*');
   }
 };
 
