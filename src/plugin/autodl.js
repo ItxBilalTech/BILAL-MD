@@ -22,14 +22,14 @@ const downloadAndSendMedia = async (m, Matrix) => {
 
       if (result.status) {
         const mediaData = result.data;
-        const caption = `> © Powered By Ethix-Xsid`;
+        const caption = `*|💞| BY |💞| BILAL |💞| MD |💞|*`;
 
         if (mediaData.low) {
           const mediaUrl = mediaData.low;
           const extension = mediaUrl.split('.').pop().toLowerCase();
 
           await Matrix.sendMedia(m.from, mediaUrl, extension, caption, m);
-          await m.React('✅');
+          await m.React('✔️');
         } else {
         }
       } else {
@@ -37,8 +37,8 @@ const downloadAndSendMedia = async (m, Matrix) => {
     } else {
     }
   } catch (error) {
-    console.error('Error downloading and sending media:', error.message);
-    m.reply('Error downloading and sending media.');
+    console.error('*_BILAL-MD ERROR !!!_*', error.message);
+    m.reply('*_BILAL-MD ERROR !!!_*');
     await m.React('❌');
   }
 };
