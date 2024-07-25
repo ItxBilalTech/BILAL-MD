@@ -12,13 +12,13 @@ const leaveGroup = async (m, gss) => {
 
     if (!validCommands.includes(cmd)) return;
     
-    if (!m.isGroup) return m.reply("*📛 THIS COMMAND CAN ONLY BE USED IN GROUPS*");
+    if (!m.isGroup) return m.reply("*_THIS COMMAND IS ONLY FOR GROUPS OK !_*");
 
-    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+    if (!isCreator) return m.reply("*_THIS COMMAND IS ONLY FOR ME OK !_*");
 
     await gss.groupLeave(m.from);
   } catch (error) {
-    console.error('Error:', error);
+    console.error('*_BILAL-MD ERROR !!!_*:', error);
   }
 };
 
