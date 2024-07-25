@@ -13,16 +13,16 @@ const block = async (m, gss) => {
 
     if (!validCommands.includes(cmd)) return;
     
-    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+    if (!isCreator) return m.reply("*_THIS COMMAND IS ONLY FOR ME OK !_*");
 
     let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net';
     
     await gss.updateBlockStatus(users, 'block')
-      .then((res) => m.reply(`Blocked ${users.split('@')[0]} successfully.`))
-      .catch((err) => m.reply(`Failed to block user: ${err}`));
+      .then((res) => m.reply(`BLOCKED ${users.split('@')[0]} .`))
+      .catch((err) => m.reply(`BILAL-MD ERROR !!! ${err}`));
   } catch (error) {
-    console.error('Error:', error);
-    m.reply('An error occurred while processing the command.');
+    console.error('*_BILAL-MD ERROR !!!_*', error);
+    m.reply('*_BILAL-MD ERROR !!!_*');
   }
 };
 
