@@ -9,7 +9,7 @@ const fetchData = async (m, Matrix) => {
   const validCommands = ['fetch', 'get', 'api'];
 
   if (validCommands.includes(cmd)) {
-    if (!/^https?:\/\//.test(text)) return m.reply('Start the *URL* with http:// or https://');
+    if (!/^https?:\/\//.test(text)) return m.reply('Starting *LINK* with http://');
 
     try {
       const _url = new URL(text);
@@ -18,12 +18,12 @@ const fetchData = async (m, Matrix) => {
 
       const contentLength = res.headers.get('content-length');
       if (contentLength && contentLength > 100 * 1024 * 1024 * 1024) {
-        return m.reply(`Content-Length exceeds the limit: ${contentLength}`);
+        return m.reply(`*OVER DOWNLOADING LIMIT* ${contentLength}`);
       }
 
       const contentType = res.headers.get('content-type');
       if (!/text|json/.test(contentType)) {
-        await Matrix.sendMedia(m.from, url, 'file', '> Api Fetched From Ethix-MD', m);
+        await Matrix.sendMedia(m.from, url, 'file', '> Api Fetched From BILAL-MD', m);
         return;
       }
 
@@ -39,8 +39,8 @@ const fetchData = async (m, Matrix) => {
         m.reply(content.slice(0, 65536));
       }
     } catch (error) {
-      console.error('Error fetching data:', error.message);
-      m.reply('Error fetching data.');
+      console.error('*_BILAL-MD ERROR !!!_*', error.message);
+      m.reply('*_BILAL-MD ERROR !!!_*');
     }
   }
 };
