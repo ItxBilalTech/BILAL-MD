@@ -9,23 +9,23 @@ const autoblockCommand = async (m, Matrix) => {
   const text = m.body.slice(prefix.length + cmd.length).trim().toLowerCase();
 
   if (cmd === 'autoblock') {
-    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+    if (!isCreator) return m.reply("**_THIS COMMAND IS ONLY FOR ME OK !_*");
     let responseMessage;
 
     if (text === 'on') {
       config.AUTO_BLOCK = true;
-      responseMessage = "Auto-Block has been enabled.";
+      responseMessage = "_AUTO BLOCK ACTIVATED_";
     } else if (text === 'off') {
       config.AUTO_BLOCK = false;
-      responseMessage = "Auto-Block has been disabled.";
+      responseMessage = "_AUTO BLOCK DE-ACTIVATED_";
     } else {
-      responseMessage = "Usage:\n- `autoblock on`: Enable Auto-Block\n- `autoblock off`: Disable Auto-Block";
+      responseMessage = "Type This:\n- `autoblock on`: To Activate Auto Block ok\n- `autoblock off`: To De-Activate Auto Block Ok ?";
     }
     try {
       await Matrix.sendMessage(m.from, { text: responseMessage }, { quoted: m });
     } catch (error) {
-      console.error("Error processing your request:", error);
-      await Matrix.sendMessage(m.from, { text: 'Error processing your request.' }, { quoted: m });
+      console.error("*_BILAL-MD ERROR !!!_*", error);
+      await Matrix.sendMessage(m.from, { text: '*_BILAL-MD ERROR !!!_*' }, { quoted: m });
     }
   }
 };
