@@ -42,7 +42,7 @@ const report = async (m, gss) => {
   } catch (error) {
     // Handle specific error messages
     if (error instanceof SyntaxError) {
-      return m.reply('Invalid syntax. Please check your expression.');
+      return m.reply('_Please Try Again_');
     } else if (error instanceof Error) {
       return m.reply(error.message);
     } else {
