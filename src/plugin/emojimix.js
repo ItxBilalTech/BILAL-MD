@@ -13,7 +13,7 @@ const emojimix = async (m, Matrix) => {
 
     let [emoji1, emoji2] = text.split('+');
     if (!emoji1 || !emoji2) {
-      return m.reply(`Example: ${prefix + cmd} 😅+🤔`);
+      return m.reply(`Type This \n\n ${prefix + cmd} 😍+😁`);
     }
 
     const url = `https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`;
@@ -21,7 +21,7 @@ const emojimix = async (m, Matrix) => {
     const anu = await response.json();
 
     if (!anu.results || anu.results.length === 0) {
-      return m.reply('No emoji mix found for the provided emojis.');
+      return m.reply('*_BILAL-MD ERROR !!!_*');
     }
 
     for (let res of anu.results) {
@@ -29,8 +29,8 @@ const emojimix = async (m, Matrix) => {
       await fs.unlinkSync(encmedia);
     }
   } catch (error) {
-    console.error('Error:', error);
-    m.reply('An error occurred while processing the command.');
+    console.error('*_BILAL-MD ERROR !!!_*', error);
+    m.reply('*_BILAL-MD ERROR !!!_*');
   }
 };
 
