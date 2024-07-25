@@ -10,15 +10,15 @@ const demote = async (m, gss) => {
     if (!validCommands.includes(cmd)) return;
 
 
-    if (!m.isGroup) return m.reply("*📛 THIS COMMAND CAN ONLY BE USED IN GROUPS*");
+    if (!m.isGroup) return m.reply("**_THIS COMMAND IS ONLY FOR GROUPS OK !_*");
     const groupMetadata = await gss.groupMetadata(m.from);
     const participants = groupMetadata.participants;
     const botNumber = await gss.decodeJid(gss.user.id);
     const botAdmin = participants.find(p => p.id === botNumber)?.admin;
     const senderAdmin = participants.find(p => p.id === m.sender)?.admin;
 
-    if (!botAdmin) return m.reply("*📛 BOT MUST BE AN ADMIN TO USE THIS COMMAND*");
-    if (!senderAdmin) return m.reply("*📛 YOU MUST BE AN ADMIN TO USE THIS COMMAND*");
+    if (!botAdmin) return m.reply("_MAKE ME ADMIN FIRST !_");
+    if (!senderAdmin) return m.reply("_THIS COMMAND IS ONLY FOR ADMINS !_");
 
     if (!m.mentionedJid) m.mentionedJid = [];
 
@@ -31,7 +31,7 @@ const demote = async (m, gss) => {
       : [];
 
     if (users.length === 0) {
-      return m.reply("*📛 PLEASE MENTION OR QUOTE A USER TO DEMOTE*");
+      return m.reply("*_FIRST MENTION THE ADMIN AND TYPE \n\n *.demote*");
     }
 
     const validUsers = users.filter(Boolean);
@@ -39,12 +39,12 @@ const demote = async (m, gss) => {
     await gss.groupParticipantsUpdate(m.from, validUsers, 'demote')
       .then(() => {
         const demotedNames = validUsers.map(user => `@${user.split("@")[0]}`);
-        m.reply(`*USERS ${demotedNames} DEMOTED SUCCESSFULLY IN THE GROUP ${groupMetadata.subject}*`);
+        m.reply(`*USERS ${demotedNames} ADMIN ROLE GIVEN BACK *| DEMOTED |* ${groupMetadata.subject}*`);
       })
-      .catch(() => m.reply('Failed to demote user(s) in the group.'));
+      .catch(() => m.reply('_Please Try Again_'));
   } catch (error) {
-    console.error('Error:', error);
-    m.reply('An error occurred while processing the command.');
+    console.error('*_BILAL-MD ERROR !!!_*', error);
+    m.reply('*_BILAL-MD ERROR !!!_*');
   }
 };
 
