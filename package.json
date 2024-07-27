@@ -1,15 +1,15 @@
 {
-  "name": "KING-BILAL-MD",
-  "version": "10.8.1",
-  "description": "KING-BILAL-MD latest multi device whatsapp bot",
+  "name": "BILAL-MD",
+  "version": "1.0.0",
+  "description": "BILAL-MD latest multi device whatsapp bot",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "pm2 start src/index.js --deep-monitoring --attach --name KING-BILAL-MD",
-    "stop": "pm2 stop KING-BILAL-MD",
-    "restart": "pm2 restart KING-BILAL-MD"
+    "start": "pm2 start src/index.js --deep-monitoring --attach --name index.js",
+    "stop": "pm2 stop index.js",
+    "restart": "pm2 restart index.js"
   },
-  "keywords": ["king-bilal-md", "whatsapp-bot", "whatsapp md bot"],
+  "keywords": ["bilal-md", "whatsapp-bot", "whatsapp md bot"],
   "author": "BILAL",
   "license": "ISC",
   "dependencies": {
